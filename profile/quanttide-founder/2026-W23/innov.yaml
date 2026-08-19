@@ -1,0 +1,123 @@
+schemas:
+- usage: 适用于研发团队设计人机协作流程时参考
+  entities:
+  - name: 人类
+    attributes:
+    - 洞察供给
+    - 反馈质量
+  - name: AI
+    attributes:
+    - 补全能力
+    - 整合能力
+  causals:
+  - condition: 人类提供充足洞察
+    outcome: AI有效补全并整合
+  - condition: AI整合完成
+    outcome: 驱动下一轮上升循环
+  boundaries:
+  - 适用于研发探索
+  - 排除纯机械重复任务
+  - 需要AI达到可补全的质量水平
+  properties:
+  - key: 协作模式
+    value: 人机互补
+  dynamics:
+  - key: 循环速度
+    value: 随自动化程度提升
+  mappings:
+  - intent: 快速发现洞察
+    action: 启动POC，AI作为补全器
+  - intent: 维持低耗能产出
+    action: 依赖AI自动化，人类仅提供方向
+  biases:
+  - id: e4f5a6b7-c8d9-0123-f567-890123456789
+    belief: AI可完全替代人类洞察
+    fact: 人类反馈是打破AI局部最优的关键
+  - id: e4f5a6b7-c8d9-0123-f567-890123456788
+    belief: AI整合完成后人类可以彻底退出
+    fact: AI整合完成仍需人类审阅把关
+situations:
+- id: e5f6a7b8-c9d0-1234-efab-345678901234
+  name: innov
+  label: 创新管理
+  content:
+    agenda: 以 POC 为核心的快速探索范式，通过大量小规模验证快速试错，用低成本试错替代大规模规划。
+    ecology: 默认日志作为 POC 入口效果显著、AI 补全器模式减少洞察发现压力、低耗能状态下维持产出的策略可行、整合的力量驱动上升循环。
+    frame: 将研发探索理解为人类提供洞察 + AI 补全整合的协作循环——POC 是发现的手段，整合是收敛的机制，低耗能模式验证了系统自动化程度的试金石。
+    dynamics: 从默认日志做 POC 的范式发现，到疲劳状态下利用 AI 补全的低耗能策略，再到整合的力量作为上升循环的驱动力，从操作层面逐步抽象为方法论反思。
+  relations:
+  - source: innov
+    target: business
+    relation_type: support
+    confidence: high
+    description: 商务拓展的Frame明确宣称"商业模式探索是商业领域的POC"，创新管理的POC范式直接为商务验证提供方法论和验证手段（POC/章程/原型），两个Schema的entities高度同构
+  - source: innov
+    target: meta
+    relation_type: conflict
+    confidence: medium
+    description: 创新管理的快速POC和低耗能模式产生大量新实体和变化，与元职能的标准化和规则归并需求在节奏上冲突——速度与秩序、探索与收敛之间的固有矛盾
+  - source: innov
+    target: write
+    relation_type: trigger
+    confidence: medium
+    description: 创新管理通过POC验证成功（"默认日志作为POC入口效果显著"）驱动整合力量，触发叙事工程从碎片积累到框架成型的上升循环
+  - source: innov
+    target: product
+    relation_type: trigger
+    confidence: medium
+    description: 创新管理周期中发现AI表达日益多样化并超越传统文档边界，触发产品研发对可编辑阅读器和块编辑器等新交互范式的探索需求
+intentions:
+- id: a7edfdc7-94a6-40c6-8a9a-d8f551c059f0
+  title: 建立以 POC 为核心的快速探索范式
+  description: 通过大量小规模 POC 快速验证想法，用低成本试错替代大规模规划
+  motivation: 默认日志作为 POC 入口效果显著，验证了快速试错的可行性
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: middle
+    label: 中层
+    description: 为顶层意图服务的阶段性目标
+  priority:
+    name: high
+    label: 高
+    description: 贯穿 4 天，从具体方法抽象为方法论
+  trigger:
+    name: persistent
+    label: 持续
+    description: 直到 POC 范式成为默认探索方式
+  risk:
+    name: low
+    label: 低
+    description: 方法已反复验证有效（实验室模式、AI补全器）
+- id: 8ccbc440-64f7-405d-ba77-4da6370e887f
+  title: 利用低耗能模式维持产出
+  description: 在疲劳状态下借助 AI 降低认知负担，维持持续产出
+  motivation: 发现低耗能时仍能维持产出，说明 AI 补全机制足够成熟
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: bottom
+    label: 底层
+    description: 为上层意图提供基础条件保障
+  priority:
+    name: low
+    label: 低
+    description: 被动策略，仅在疲劳状态下启用
+  trigger:
+    name: conditional
+    label: 条件触发
+    description: 疲劳或低决策能力状态时启用
+  risk:
+    name: low
+    label: 低
+    description: 低耗能策略已多次验证可行
+thoughts:
+- 2026-06-01.md
+- 2026-06-02.md
+- 2026-06-03.md
+- 2026-06-04.md
+- 2026-06-05.md
+- 2026-06-06.md
+- 2026-06-07.md

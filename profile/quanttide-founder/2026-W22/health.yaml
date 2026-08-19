@@ -1,0 +1,111 @@
+schemas:
+- usage: 当在快速演化的探索节奏中面临高压与意义感波动，需要维持心理可持续性时使用
+  entities:
+  - name: 心理健康
+    attributes:
+    - 动态调节系统而非稳定状态
+    - 接受波动并在波动中找到平衡
+    - 高压探索的伴生议题
+  - name: 波动
+    attributes:
+    - 无意义感与意义感交替
+    - 整合周期缩短加速波动频率
+    - 不可避免需要接纳
+  - name: 平衡点
+    attributes:
+    - 动态变化的而非固定的
+    - 随探索节奏自然调整
+    - 从被动调节到主动觉察
+  - name: 调节机制
+    attributes:
+    - 从被动反应到主动调节
+    - 觉察是调节的前提
+    - 与工作节奏融合而非割裂
+  causals:
+  - condition: 高压探索持续，整合周期缩短，无意义感与意义感交替加速
+    outcome: 需要建立更快的动态调节频率，从被动反应转向主动觉察与平衡
+  - condition: 将心理健康理解为追求稳定状态
+    outcome: 因波动不可消除而产生更大的焦虑和挫败感
+  - condition: 接受波动并将其纳入调节系统
+    outcome: 在快速演化的探索节奏中维持心理可持续性
+  boundaries:
+  - 适用于高压认知探索场景中的日常心理调节，不适用于临床心理问题或创伤干预
+  - 假设个人具备基本的自我觉察能力，不替代专业心理咨询
+  - 不涵盖药物或医学层面的心理干预
+  properties:
+  - key: 调节模式
+    value: 从被动调节到动态平衡
+  - key: 核心假设
+    value: 心理健康不是稳定状态，而是动态调节系统的健康运转
+  - key: 调节频率
+    value: 随整合周期缩短而加快——周期越短调节频率越高
+  dynamics:
+  - key: 调节演化
+    value: 从被动调节（反应性应对）到动态平衡（主动觉察与接纳）
+  - key: 波动模式
+    value: 无意义感与意义感的交替周期在加速，调节系统需要同步提速
+  mappings:
+  - intent: 在动态波动中维持心理平衡
+    motivation: 整合周期缩短需要更快的调节
+    action: 建立主动觉察机制，接纳波动而非消除波动，将调节融入日常工作节奏而非割裂对待
+    trigger: persistent
+    risk: medium
+  biases:
+  - id: 660e8400-e29b-41d4-a716-446655440103
+    belief: 认为心理健康意味着持续的稳定和正向状态——波动是异常和需要消除的
+    fact: 心理健康是动态调节系统的健康运转——波动是系统常态，接纳波动才能找到动态平衡
+  - id: 660e8400-e29b-41d4-a716-446655440104
+    belief: 认为高压探索中应该全力冲刺，心理调节会拖慢进度
+    fact: 忽视心理调节反而因判断质量下降、倦怠累积降低长期产出——可持续的节奏比短期冲刺更高效
+situations:
+- id: c9d0e1f2-a3b4-5678-cdef-789012345622
+  name: health
+  label: 身心健康
+  content:
+    agenda: 在面对不确定性和商业压力时保持行动力与判断力，防止情绪波动影响决策。
+    ecology: 恐惧→谨慎乐观→断裂→疲劳→对抗→愤怒→希望的剧烈情绪曲线、情绪与商业进展高度共振、冰冷的制度转移压力作为应对策略。
+    frame: 将心理状态理解为与商业进展共振的仪表盘——情绪波动是常态，策略从"硬扛"转向"制度对冲"，商业越不确定对心理稳态的需求越强。
+    dynamics: 情绪曲线剧烈波动，从恐惧到谨慎乐观，经历断裂和疲劳，再到对抗与愤怒，最终回归希望，与商业进展高度共振。
+  relations:
+  - source: health
+    target: business
+    relation_type: conflict
+    confidence: medium
+    description: 身心健康对心理稳态的需求与商务拓展天生的不确定性之间存在内在冲突，health意图风险已明确指出"商业越不确定对心理稳态的需求越强，但不确定本身无法消除"
+  - source: health
+    target: org
+    relation_type: support
+    confidence: medium
+    description: 身心健康的"冰冷的制度转移压力"应对策略直接支持组织管理的制度化治理方向，制度作为情绪缓冲机制的发现为"从人治到法治"转型提供了心理层面的正当性
+intentions:
+- id: f2cd82bc-853e-4b45-afde-3864a7fb03d0
+  title: 维护心理稳态与情绪调节
+  description: 在面对不确定性和商业压力时保持行动力，防止情绪波动影响决策
+  motivation: 情绪曲线剧烈波动，策略从"硬扛"转向"制度对冲"
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: bottom
+    label: 底层
+    description: 为所有其他意图提供运作前提
+  priority:
+    name: high
+    label: 高
+    description: 覆盖全周，策略进化是关键
+  trigger:
+    name: persistent
+    label: 持续
+    description: 冰冷的制度转移压力作为核心策略已确立
+  risk:
+    name: medium
+    label: 中
+    description: 商业越不确定对心理稳态的需求越强，但不确定本身无法消除
+thoughts:
+- 2026-05-25.md
+- 2026-05-26.md
+- 2026-05-27.md
+- 2026-05-28.md
+- 2026-05-29.md
+- 2026-05-30.md
+- 2026-05-31.md

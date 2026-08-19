@@ -1,0 +1,93 @@
+schemas:
+- usage: 当需要从咨询业务向多模式收入拓展，或建立标准化商务流程时使用
+  entities:
+  - name: 章程
+    attributes:
+    - 标准化产出流程的核心
+    - 可快速生成高质量商务文档
+    - 从章程到收入的转化载体
+  - name: 商务文档
+    attributes:
+    - 报价单
+    - 合同
+    - 方案书
+  - name: 收入模式
+    attributes:
+    - 咨询（核心收入）
+    - 课程（低成本招募潜在咨询人才）
+    - 代码诊断（低门槛新收入来源）
+  causals:
+  - condition: 章程模板已建立且标准化
+    outcome: 可快速生成高质量商务文档，实现从章程到收入的转化
+  - condition: 课程业务可低成本招募潜在咨询人才
+    outcome: 课程成为咨询业务的入口和人才筛选渠道
+  boundaries:
+  - 假设已有可复用的标准化章程模板，不适用于完全定制化的商务场景
+  - 仅适用于咨询、课程、代码诊断等知识服务类业务
+  - 不涵盖大规模产品销售的商务流程
+  properties:
+  - key: 核心转化路径
+    value: 章程 → 商务文档 → 收入
+  - key: 业务拓展模式
+    value: 单一咨询 → 多模式收入（咨询+课程+代码诊断）
+  - key: 流程成熟度
+    value: 从手动报价到章程化报价
+  dynamics:
+  - key: 流程演化
+    value: 从手动报价到章程化报价
+  - key: 收入结构演化
+    value: 从单一咨询到多模式收入的探索
+  mappings:
+  - intent: 建立章程驱动的商务流程
+    action: 章程化报价流程，快速生成高质量商务文档，实现从章程到收入的转化
+  biases:
+  - id: 660e8400-e29b-41d4-a716-446655440003
+    belief: 认为有了章程模板后商务流程可以完全自动化，无需人工介入
+    fact: 章程模板加速了文档生成，但商务决策、客户沟通等环节仍需人工判断
+situations:
+- id: a7b8c9d0-e1f2-3456-abcd-567890123419
+  name: business
+  label: 商务拓展
+  content:
+    agenda: 从大量小额项目的焦虑中解放出来，建立以十万以上大单为核心、以平台构建为杠杆的可持续商业模式。
+    ecology: 大单战略与平台战略形成正反馈、秘书处分单机制被提出、放弃低效销售线索行为、Token 费用作为现实约束、平台构建本身成为获取大单的素材。
+    frame: 将商业模式转型理解为从焦虑驱动到战略驱动的跃迁——大单不是目标而是机制的结果，平台是杠杆，放弃低效销售行为标志着战略自信的建立。
+    dynamics: 从商务确权的萌芽到项目焦虑的转折，再到放弃低效行为和秘书处分单机制的大单战略确立，Token 费用作为现实约束补充。
+  relations:
+  - source: business
+    target: health
+    relation_type: trigger
+    confidence: medium
+    description: 商业模式转型压力和Token费用现实约束直接触发身心健康的高压情绪周期，大单焦虑成为新的压力源加剧心理消耗
+intentions:
+- id: 57841717-1be9-4e16-81a8-7a71bf4a0fb4
+  title: 实现从项目驱动到大单驱动的商业模式转型
+  description: 从大量小额项目的焦虑中解放，建立以十万以上大单为核心的可持续商业模式
+  motivation: 放弃小红书等低效销售线索行为，意识到"不敢等才是最大阻碍"
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: middle
+    label: 中层
+    description: 为顶层"可持续创业"服务的商业模式目标
+  priority:
+    name: high
+    label: 高
+    description: 05-07从焦虑到战略的完整转变发生在这天
+  trigger:
+    name: persistent
+    label: 持续
+    description: 平台构建本身成为获取大单的素材，形成正反馈
+  risk:
+    name: medium
+    label: 中
+    description: Token费用对商业模式构成现实约束，大单周期长与现金流之间存在张力
+thoughts:
+- 2026-05-04.md
+- 2026-05-05.md
+- 2026-05-06.md
+- 2026-05-07.md
+- 2026-05-08.md
+- 2026-05-09.md
+- 2026-05-10.md

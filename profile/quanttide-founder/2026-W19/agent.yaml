@@ -1,0 +1,87 @@
+schemas:
+- usage: 当需要在命令行环境中构建AI代理系统时使用
+  entities:
+  - name: AI智能体
+    attributes:
+    - 从被动响应到主动代理
+    - 自主理解上下文
+    - 自主执行任务
+  - name: 命令行交互
+    attributes:
+    - 可被代理的需求持续涌现
+    - 适合结构化任务分解
+    - 文本界面降低交互复杂度
+  - name: AI能力边界
+    attributes:
+    - 处理能力是当前瓶颈
+    - 需逐步扩展而非一步到位
+    - 边界由可代理需求定义
+  causals:
+  - condition: 命令行交互中可代理的需求持续增长
+    outcome: 需要构建AI智能体应用框架以系统化响应
+  - condition: AI处理能力成为瓶颈，无法一次性覆盖所有场景
+    outcome: 需要从命令行日志中识别高价值可代理需求，逐步扩展能力边界
+  boundaries:
+  - 仅适用于命令行交互场景，不涵盖图形界面或语音交互代理
+  - 假设AI能力可渐进式扩展，不适合需要一次性全功能交付的场景
+  - 不覆盖AI模型训练与调优等底层工作
+  properties:
+  - key: 架构模式
+    value: 从被动响应到主动代理
+  - key: 扩展策略
+    value: 从日志识别需求，逐步扩展边界
+  - key: 设计原则
+    value: 做减法而非加法——每个功能都要让核心能力更强
+  dynamics:
+  - key: 演化阶段
+    value: 从识别可代理需求到主动代理
+  - key: 能力扩展
+    value: 逐步扩展AI能力边界
+  mappings:
+  - intent: 构建AI智能体应用框架
+    action: 从命令行日志中识别可代理需求，设计代理响应框架，逐步扩展AI能力边界
+  biases:
+  - id: 660e8400-e29b-41d4-a716-446655440002
+    belief: 认为命令行工具的功能越多越好，加法式开发能覆盖更多用户需求
+    fact: 命令行工具的核心价值是做减法——每个功能都应强化核心能力，冗余功能反而降低可用性
+situations:
+- id: b8c9d0e1-f2a3-4567-bcde-678901234519
+  name: agent
+  label: 智能体工程
+  content:
+    agenda: 在 AI 能力快速演进的背景下找到以人类意图为中心、兼顾可控性与表达力的 AI 协作范式。
+    ecology: 给每人配一个秘书"的 AI 协作理想被提出、口语化表达的信息价值被确认、模型 vs 框架的终极追问尚未收敛、AI 过度思考问题暴露。
+    frame: 将 AI 协作理解为从"工具"到"系统组件"的范式跃迁——人类意图是中心，口语化表达是天然接口，模型与框架的取舍是尚未解决的深层问题。
+    dynamics: 从每人配一个秘书的协作理想到创意分解交 AI 执行的模式，再到口语化表达的价值确认，最后到模型 vs 框架的终极追问。
+intentions:
+- id: 8529a34a-1f13-49c4-95ca-f6e79b2f8b13
+  title: 确立以人为中心的AI协作范式
+  description: 在AI能力快速演进的背景下找到以人类意图为中心、兼顾可控性与表达力的AI协作范式
+  motivation: '"每人配一个秘书"的AI协作理想被提出，但模型vs框架的终极追问尚未收敛'
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: middle
+    label: 中层
+    description: 为顶层"构建AI驱动的创业体系"服务
+  priority:
+    name: low
+    label: 低
+    description: 全周持续探索但核心问题未收敛
+  trigger:
+    name: conditional
+    label: 条件触发
+    description: 模型与框架的取舍问题收敛后深入
+  risk:
+    name: high
+    label: 高
+    description: 模型更强但不可控vs框架可控但适应性不足，核心矛盾未解决
+thoughts:
+- 2026-05-04.md
+- 2026-05-05.md
+- 2026-05-06.md
+- 2026-05-07.md
+- 2026-05-08.md
+- 2026-05-09.md
+- 2026-05-10.md

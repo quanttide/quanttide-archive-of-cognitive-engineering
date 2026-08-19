@@ -1,0 +1,101 @@
+schemas:
+- usage: 当在持续高压的认知探索工作中需要维持心理可持续性，应对周期性无意义感时使用
+  entities:
+  - name: 心理健康
+    attributes:
+    - 探索活动的元约束
+    - 不可跳过的可行域边界
+    - 决定所有其他活动的可持续性
+  - name: 探索活动
+    attributes:
+    - 持续高压运行
+    - 低耗能模式可作为缓冲
+    - 无意义感与整合感交替出现
+  - name: 压力
+    attributes:
+    - 长期积累影响判断质量
+    - 周期性的释放需求
+    - 需主动觉察与预算管理
+  causals:
+  - condition: 持续高压探索中无意义感周期性出现，压力累积未被觉察和管理
+    outcome: 心理可持续性下降，判断质量受损，最终导致倦怠
+  - condition: 将心理健康视为探索的元约束——即所有其他活动的可行域边界
+    outcome: 从被动调节压力转向主动预算管理，在可持续范围内优化探索产出
+  boundaries:
+  - 适用于高压认知探索场景中的心理调节，不替代专业心理咨询
+  - 假设个人有基本自我觉察能力，不适用于缺乏自我觉察的情况
+  - 不涵盖临床心理问题或药物层面的干预
+  properties:
+  - key: 约束层级
+    value: 元约束——所有其他活动的可行域边界
+  - key: 调节模式
+    value: 从被动调节到主动预算管理
+  - key: 核心原则
+    value: 不是可以跳过的问题，忽视它反而降低长期产出
+  dynamics:
+  - key: 调节范式
+    value: 从被动调节到主动预算管理
+  - key: 压力循环
+    value: 累积 → 觉察 → 预算调整 → 可持续产出
+  mappings:
+  - intent: 管理心理预算避免倦怠
+    motivation: 无意义感周期性出现影响产出，持续高压不可持续
+    action: 将心理健康作为探索活动的可行域边界主动维护，建立心理预算管理机制，在高压与恢复之间找到可持续节奏
+    trigger: persistent
+    risk: medium
+  biases:
+  - id: 660e8400-e29b-41d4-a716-446655440009
+    belief: 认为高压探索中应全力冲刺，心理调节会拖慢进度，等任务完成再休息
+    fact: 心理健康是所有其他活动的可行域边界——不是可以跳过的问题，忽视它反而降低长期产出效率，主动预算管理比被动崩溃更高效
+situations:
+- id: c9d0e1f2-a3b4-5678-cdef-789012345621
+  name: health
+  label: 身心健康
+  content:
+    agenda: 在创造流与精力耗竭之间找到平衡，管理高强度认知投入带来的身心损耗。
+    ecology: 进展迅速带来的充实感与过度工作的疲劳感并存、创造流（滑翔感）让人不想停、唯一的瓶颈是精力、精力成为最贵的资源、滑翔状态下高度沉浸高速整合。
+    frame: 将精力管理理解为创造流的伴生挑战——滑翔状态是高度沉浸的创造体验，但精力的有限性成为最硬约束，精力不是消耗而是需要保护的稀缺资源。
+    dynamics: 从充实感与疲劳感的并存到沮丧压力的出现，再到滑翔状态的发现与精力作为最贵资源的认知，形成全周的张力线索。
+  relations:
+  - source: health
+    target: think
+    relation_type: support
+    confidence: high
+    description: 健康管理将精力定位为最稀缺资源，滑翔状态的高度沉浸与认知系统溢出感直接耦合——精力保障决定认知外化工程的推进深度
+  - source: health
+    target: devops
+    relation_type: support
+    confidence: medium
+    description: 健康为Python到Rust的密集迁移和CLI工具链迭代提供持续精力，创造流与精力耗竭的张力直接约束工具链开发节奏
+intentions:
+- id: beb829ed-d98e-4559-8d83-f29ac587f4a3
+  title: 理解并管理创造状态的频谱
+  description: 在创造流与精力耗竭之间找到平衡，将精力作为最稀缺资源进行系统性管理
+  motivation: 发现"滑翔"状态——高度沉浸高速整合却又最需要休息
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: bottom
+    label: 底层
+    description: 为所有其他意图提供精力保障
+  priority:
+    name: high
+    label: 高
+    description: 全周持续的元张力，唯一的瓶颈就是精力
+  trigger:
+    name: persistent
+    label: 持续
+    description: 精力管理被定位为所有工程活动的元约束
+  risk:
+    name: high
+    label: 高
+    description: 创造流让人不想停，与精力耗竭的生理限制形成根本矛盾
+thoughts:
+- 2026-05-18.md
+- 2026-05-19.md
+- 2026-05-20.md
+- 2026-05-21.md
+- 2026-05-22.md
+- 2026-05-23.md
+- 2026-05-24.md

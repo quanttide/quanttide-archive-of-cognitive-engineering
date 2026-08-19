@@ -1,0 +1,115 @@
+schemas:
+- usage: 当需要建立或评估代码基础设施的安全性和可靠性时使用
+  entities:
+  - name: 基础设施
+    attributes:
+    - 支撑上层创新的基底
+    - 稳固程度决定安全边界
+    - 从手动到自动化的演进
+  - name: 代码仓库权限
+    attributes:
+    - 访问控制
+    - 协作权限粒度
+    - 安全审计
+  - name: 备份策略
+    attributes:
+    - 数据完整性保障
+    - 灾难恢复能力
+    - 备份频率与保留策略
+  - name: 工具链
+    attributes:
+    - 自动化程度
+    - 集成流畅度
+    - 治理成熟度
+  causals:
+  - condition: 代码仓库权限和备份策略不足
+    outcome: 数据和代码面临丢失或泄露风险，上层创新缺乏安全基底
+  - condition: 工具链自动化程度不足，依赖手动操作
+    outcome: 运维效率低且容易出错，需要通过自动化治理提升可靠性
+  boundaries:
+  - 适用于个人或小型团队的基础设施治理，不适用于企业级基础设施管理
+  - 假设基础设施规模可被当前工具链覆盖，不涵盖大规模分布式系统
+  - 不涵盖物理安全或网络安全等底层安全领域
+  properties:
+  - key: 治理模式
+    value: 从手动操作到自动化治理
+  - key: 安全定位
+    value: 支撑上层创新的基底
+  - key: 核心原则
+    value: 基础设施的稳固程度决定了上层探索的安全边界
+  dynamics:
+  - key: 治理演进
+    value: 从手动操作到自动化治理
+  - key: 安全成熟度
+    value: 从基础权限控制到全面自动化安全治理
+  mappings:
+  - intent: 建立安全可靠的基础设施
+    action: 完善代码仓库权限管理，建立备份策略，推进工具链自动化治理
+  biases:
+  - id: 660e8400-e29b-41d4-a716-446655440005
+    belief: 认为基础设施只需搭建一次即可长期稳定运行，后续无需持续投入
+    fact: 基础设施需要持续治理和演进——随着业务复杂度提升，安全与可靠性要求同步增长
+situations:
+- id: b2c3d4e5-f6a7-8901-bcde-f12345678919
+  name: infra
+  label: 基础设施
+  content:
+    agenda: 建立以可观测性为出发点、各平台互相观察协同的多云平台体系，明确管理后台作为系统信息枢纽的定位。
+    ecology: 所有产品功能从可观测性出发、产品云可观察写作云形成互观察循环、管理后台从"解决问题"转变为"承载问题/展示认知"、量潮云内观与量潮咨询外观的视角分离。
+    frame: 将平台架构理解为可观测性驱动的多视角系统——管理后台是枢纽而非工具，内观与外观的分离形成自我反馈循环，认知向系统收敛带来方向感。
+    dynamics: 从可观测性理念出发，经管理后台枢纽定位的突破，到内观/外观的视角分离与循环，再到数据云和组织云的新任务。
+intentions:
+- id: 05778d6c-7942-461b-a2ca-516d7bfced14
+  title: 构建以可观测性为核心的多平台体系
+  description: 建立以可观测性为出发点的多云平台体系，形成各平台互相观察的迭代循环
+  motivation: 发现大家都聚焦控制论，而自己在走观测路线——这是差异化路径
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: middle
+    label: 中层
+    description: 为顶层"建立可持续的认知驱动平台体系"服务
+  priority:
+    name: high
+    label: 高
+    description: 本周最早出现的意图，贯穿全周
+  trigger:
+    name: persistent
+    label: 持续
+    description: 直到平台间互观察循环成为默认运作模式
+  risk:
+    name: medium
+    label: 中
+    description: 可观测性需要平台间耦合，与管理后台"仅承载问题"的定位存在设计张力
+- id: ec40a573-5d71-4d88-8d3b-a516a547e209
+  title: 明确管理后台作为系统枢纽的定位
+  description: 让管理后台从"解决问题"转变为"承载问题/展示认知过程"，成为系统信息流转的枢纽
+  motivation: 实践中发现管理后台在不同平台中出现频次最高，自然形成了枢纽
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: middle
+    label: 中层
+    description: 为顶层"构建多平台体系"服务的子目标
+  priority:
+    name: high
+    label: 高
+    description: 05-05定位转变是本周最重要的方法论发现
+  trigger:
+    name: persistent
+    label: 持续
+    description: 管理后台在后续平台架构中保持此定位
+  risk:
+    name: low
+    label: 低
+    description: 承载问题的定位与用户期望存在预期差但方向明确
+thoughts:
+- 2026-05-04.md
+- 2026-05-05.md
+- 2026-05-06.md
+- 2026-05-07.md
+- 2026-05-08.md
+- 2026-05-09.md
+- 2026-05-10.md

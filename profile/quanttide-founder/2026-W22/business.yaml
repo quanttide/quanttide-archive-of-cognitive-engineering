@@ -1,0 +1,105 @@
+schemas:
+- usage: 当需要从咨询业务向多模式收入拓展，以低门槛验证系统性探索新商业模式时使用
+  entities:
+  - name: 想法
+    attributes:
+    - 低门槛验证为前提
+    - 从随机涌现转向主动实验
+    - 验证可行后进入结构化复制
+  - name: 验证结果
+    attributes:
+    - 可行
+    - 不可行
+    - 决定是否进入结构化复制的判据
+  - name: 结构化复制
+    attributes:
+    - 基于验证结果的大规模应用
+    - 从单一咨询到多模式收入组合
+  - name: 商务拓展
+    attributes:
+    - 商业领域的POC
+    - 章程驱动
+    - 孵化器想法成熟度提高
+  causals:
+  - condition: 想法经过低门槛验证并确认可行
+    outcome: 进入结构化复制阶段，系统化扩展到多模式收入组合
+  - condition: 等待方案完美再推向市场
+    outcome: 永远无法发布——从不完美开始才能持续迭代
+  - condition: 商务报价章程已可快速生成
+    outcome: 为系统化探索新商业模式提供了标准化基础
+  boundaries:
+  - 仅适用于知识服务类商业模式的探索，不适用于重资产或规模化产品业务
+  - 假设验证成本可控，低门槛是必要条件
+  - 不覆盖已验证成熟商业模式的规模化执行
+  properties:
+  - key: 验证模式
+    value: 低门槛POC
+  - key: 拓展路径
+    value: 从随机涌现到主动实验，从单一咨询到多模式收入
+  - key: 核心原则
+    value: 不是追求最优，追求够用——够用的系统才能持续迭代
+  dynamics:
+  - key: 模式演化
+    value: 从随机涌现到主动实验，从单一咨询到多模式收入组合
+  - key: 验证周期
+    value: 从一次性大规模验证到小规模快速迭代验证
+  mappings:
+  - intent: 系统化探索新商业模式
+    motivation: 从随机涌现转向主动实验
+    action: 以低门槛POC验证每个新想法，验证可行后再结构化复制，同时利用已标准化的章程模板加速商务流程
+    trigger: conditional
+    risk: high
+  biases:
+  - id: 660e8400-e29b-41d4-a716-446655440101
+    belief: 认为必须等到方案完美才能推向市场——不完美的发布等于失败
+    fact: 从不完美开始才能持续迭代——等待完美等于永远不发布，市场反馈是迭代的燃料
+  - id: 660e8400-e29b-41d4-a716-446655440102
+    belief: 认为商业探索要追求最优解，一次性找到最佳模式
+    fact: 够用的系统才能持续迭代——追求最优反而因代价过高导致停滞，够用即启动
+situations:
+- id: a7b8c9d0-e1f2-3456-abcd-567890123422
+  name: business
+  label: 商务拓展
+  content:
+    agenda: 获取付费客户、实现收入并验证咨询服务的市场有效性，完成从项目驱动到大单驱动的转型。
+    ecology: 大客户意向确定、咨询联盟协调、需求确认与商务推进、商业摩擦与心理承受力高度耦合、取舍和边界成为关键词。
+    frame: 将商业验证理解为与心理承受力共振的过程——商业进展直接驱动情绪波动，多客户对冲和边界管理是应对策略。
+    dynamics: 经历完整的客户转化周期：不确定→确认意向→battle→需求确认→商务推进，商业摩擦与心理承受力高度耦合。
+  relations:
+  - source: business
+    target: health
+    relation_type: trigger
+    confidence: high
+    description: 商务拓展的客户转化周期（不确定→确认→battle→需求确认→推进）直接触发身心健康的剧烈情绪曲线（恐惧→谨慎乐观→断裂→疲劳→对抗→愤怒→希望），两个Frame均明确指出"商业摩擦与心理承受力高度耦合"和"情绪与商业进展高度共振"
+intentions:
+- id: 46921356-1b38-4da1-8ec0-e5def7cf48dd
+  title: 实现商业验证与收入增长
+  description: 获取付费客户、实现收入并验证咨询服务的市场有效性
+  motivation: 大客户意向确定但battle暴露磨合摩擦
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: middle
+    label: 中层
+    description: 为顶层"可持续创业"服务
+  priority:
+    name: high
+    label: 高
+    description: 整周经历完整客户转化周期
+  trigger:
+    name: persistent
+    label: 持续
+    description: 取舍和边界作为核心策略已确立
+  risk:
+    name: medium
+    label: 中
+    description: 商业验证需要快速交付，与认知工程框架的长期投入存在资源竞争
+thoughts:
+- 2026-05-25.md
+- 2026-05-26.md
+- 2026-05-27.md
+- 2026-05-28.md
+- 2026-05-29.md
+- 2026-05-30.md
+- 2026-05-31.md

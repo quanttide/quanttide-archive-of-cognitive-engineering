@@ -1,0 +1,92 @@
+schemas:
+- usage: 适用于高压工作者自我状态检视时参考
+  entities:
+  - name: 元意图
+    attributes:
+    - 可持续性
+    - 维护状态
+  - name: 工作意图
+    attributes:
+    - 探索状态
+    - 产出质量
+  causals:
+  - condition: 元意图得到维护
+    outcome: 工作意图可持续运作
+  - condition: 元意图被忽视
+    outcome: 高压探索产生无意义感
+  boundaries:
+  - 适用于高压探索阶段
+  - 排除短期冲刺场景
+  - 需要操作者对自身状态有觉察能力
+  properties:
+  - key: 恢复成本
+    value: 高
+  dynamics:
+  - key: 维护频率
+    value: 每日
+  mappings:
+  - intent: 保持心理可持续
+    action: 早睡早起并切换到低耗能模式
+  - intent: 对冲无意义感
+    action: 执行整合
+  biases:
+  - id: c2d3e4f5-a6b7-8901-def2-345678901234
+    belief: 高压探索必须牺牲健康
+    fact: 元意图保障可维持长期产出
+situations:
+- id: c9d0e1f2-a3b4-5678-cdef-789012345678
+  name: health
+  label: 身心健康
+  content:
+    agenda: 在高压探索中维持身心健康，通过节奏调整和意义重建避免倦怠，保障所有其他意图得以持续运作。
+    ecology: 早睡早起的工作节奏比熬夜更可持续、低耗能模式验证了疲劳应对策略、写小说的无意义感反复出现、整合带来清晰感作为对冲机制。
+    frame: 将心理调节理解为一个"元意图"——它不直接驱动某个领域的工作，而是保障其他所有意图能够持续运作的基础条件，无意义感是高压探索的副产品。
+    dynamics: 从早睡早起的积极节奏尝试，到低耗能策略应对疲劳，再到无意义感的反复出现与整合感的正向对冲，是一条贯穿全周的状态线索。
+  relations:
+  - source: health
+    target: think
+    relation_type: support
+    confidence: high
+    description: 健康作为元意图保障认知能力可持续，使人机辩论与意图工程的高强度认知工作得以持续运作
+  - source: health
+    target: org
+    relation_type: support
+    confidence: high
+    description: 健康为组织危机应对提供基础精力保障，整合带来清晰感的对冲机制让创始人有心理空间处理团队韧性压力测试
+  - source: health
+    target: org
+    relation_type: conflict
+    confidence: medium
+    description: 健康意图要求低耗能节奏和意义维护，而组织危机独占当周首要关注，高强度应急响应与身心可持续需求争夺同一认知情感资源
+intentions:
+- id: a71ec650-927b-47f1-a891-bea6dc92d3c1
+  title: 调节工作节奏与维护心理可持续性
+  description: 通过节奏调整和意义重建避免倦怠，保障所有其他意图持续运作
+  motivation: 无意义感随高压探索反复出现，发现整合带来的清晰感是最有效的对冲
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: bottom
+    label: 底层
+    description: 为上层意图提供基础条件保障
+  priority:
+    name: high
+    label: 高
+    description: 元意图——独占注意力，是所有其他意图的基础前提
+  trigger:
+    name: persistent
+    label: 持续
+    description: 直到心理调节机制内化为自动习惯
+  risk:
+    name: medium
+    label: 中
+    description: 无意义感是高压探索的固有产物，无法完全消除只能对冲
+thoughts:
+- 2026-06-01.md
+- 2026-06-02.md
+- 2026-06-03.md
+- 2026-06-04.md
+- 2026-06-05.md
+- 2026-06-06.md
+- 2026-06-07.md

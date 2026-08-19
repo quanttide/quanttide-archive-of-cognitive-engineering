@@ -1,0 +1,97 @@
+schemas:
+- usage: 当需要将手工运维流程标准化，建立开发与基础设施之间的自动化流水线时使用
+  entities:
+  - name: 开发
+    attributes:
+    - 需要标准化的运维流程支撑
+    - 环境配置不一致导致交付瓶颈
+    - 部署流程需规范化
+  - name: 基础设施
+    attributes:
+    - 治理的延伸对象
+    - 手工操作过多导致脆弱性
+    - 自动化程度决定可靠性
+  - name: 自动化流水线
+    attributes:
+    - 开发与基础设施之间的桥梁
+    - 降低手工操作的出错风险
+    - 从手工到自动化的核心载体
+  causals:
+  - condition: 手工操作过多、环境配置不一致、部署流程缺乏规范
+    outcome: 部署出错风险持续增加，需要建立自动化流水线作为开发与基础设施之间的桥梁
+  - condition: 从手工运维逐步过渡到自动化流水线
+    outcome: 开发运维实现一体化，基础设施治理从被动响应变为主动治理
+  boundaries:
+  - 假设环境配置可通过自动化工具统一管理，不适用于完全物理隔离的部署环境
+  - 适用于中小规模团队的基础设施治理，不涵盖大型分布式系统
+  - 不涵盖硬件采购、机房运维等底层物理设施管理
+  properties:
+  - key: 定位
+    value: 基础设施治理的延伸，开发与基础设施之间的自动化桥梁
+  - key: 核心矛盾
+    value: 手工操作的高出错风险 vs 自动化流水线的规范性
+  - key: 治理目标
+    value: 开发运维一体化
+  dynamics:
+  - key: 运维范式
+    value: 从手工运维到自动化流水线
+  - key: 治理成熟度
+    value: 从被动响应到主动治理
+  mappings:
+  - intent: 建立标准化运维流程
+    motivation: 手工操作过多增加出错风险，环境配置不一致影响交付质量
+    action: 将运维流程标准化为自动化流水线，打通开发与基础设施之间的自动化桥梁，实现开发运维一体化
+    trigger: persistent
+    risk: low
+  biases:
+  - id: 660e8400-e29b-41d4-a716-446655440008
+    belief: 认为DevOps是独立于开发的运维职能，需要专门的运维团队来推动
+    fact: DevOps是开发与基础设施之间的自动化桥梁，不是独立职能而是连接层——自动化程度越高，运维与开发的边界越模糊
+situations:
+- id: e5f6a7b8-c9d0-1234-efab-345678901221
+  name: devops
+  label: DevOps
+  content:
+    agenda: 用多语言（Python→Rust）实现覆盖发布、重构、审计、知识管理的 CLI 工具链，以自动化流水线固化研发习惯。
+    ecology: 从 Python 到 Rust 的迁移决策、DevOps CLI 和 Knowledge CLI 并行迭代、0.1→0.2 版本跃迁验证先实验再开发的范式、Rust
+      的结构化优势被发现、从写工具到工具链生态的跃迁。
+    frame: 将工具链建设理解为研发习惯的固化——CLI 是方法论的可执行载体，工具链生态让演化路径清晰可见，Rust 的结构化与 AI 适应性优于 Python。
+    dynamics: 从平台进度受限于库的瓶颈到 CLI 0.1 发布，再到工具链生态看清演化路径，最后 Rust 迁移和混合工程验证。
+  relations:
+  - source: devops
+    target: meta
+    relation_type: support
+    confidence: medium
+    description: DevOps的CLI工具链（DevOps CLI与Knowledge CLI）是元职能"工具包即契约"愿景的可执行载体，Rust迁移验证的结构化优势直接服务于代码宪法的落地
+intentions:
+- id: c2218ab0-5965-47f8-99ca-cc31f48a5801
+  title: 搭建多语言自动化研发工具链
+  description: 用多语言实现覆盖发布、重构、知识管理的CLI工具链，以流水线固化研发习惯
+  motivation: 平台进度受限于工具链，从Python到Rust迁移后发现结构化优势
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: middle
+    label: 中层
+    description: 为顶层"高效研发"服务
+  priority:
+    name: high
+    label: 高
+    description: 0.1→0.2版本跃迁，工具链生态初步成型
+  trigger:
+    name: persistent
+    label: 持续
+    description: Skill→Command的演化路径已确立
+  risk:
+    name: medium
+    label: 中
+    description: Rust迁移带来短期生产力下降
+thoughts:
+- 2026-05-18.md
+- 2026-05-19.md
+- 2026-05-20.md
+- 2026-05-21.md
+- 2026-05-22.md
+- 2026-05-23.md
+- 2026-05-24.md

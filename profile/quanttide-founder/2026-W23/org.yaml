@@ -1,0 +1,113 @@
+schemas:
+- usage: 适用于创始人在组织转型期做决策时参考
+  entities:
+  - name: 团队
+    attributes:
+    - 韧性
+    - 人治温度
+  - name: 制度
+    attributes:
+    - 法治
+    - 标准化
+  causals:
+  - condition: 依赖人治
+    outcome: 组织温度高但脆弱
+  - condition: 建立制度且保留弹性
+    outcome: 韧性增强且温度不骤降
+  boundaries:
+  - 适用于中小型组织（5-50人）
+  - 排除成熟大企业
+  - 需要创始人对组织温度有敏感性
+  properties:
+  - key: 转型方式
+    value: 同步推进
+  dynamics:
+  - key: 温度损失速率
+    value: 随制度化速度递增
+  mappings:
+  - intent: 应对人员流失
+    action: 建立反脆弱机制
+  - intent: 文化转型
+    action: 法治与人治同步推进
+  biases:
+  - id: a6b7c8d9-e0f1-2345-7890-123456789012
+    belief: 招人补位即可解决
+    fact: 制度化才是根本但需保留温度
+  - id: a6b7c8d9-e0f1-2345-7890-123456789013
+    belief: 制度化必然失去温度
+    fact: 温度损失可通过叙事和文化机制对冲
+situations:
+- id: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+  name: org
+  label: 组织管理
+  content:
+    agenda: 在核心成员突然离职的冲击下维持团队基本盘稳定，核心目标是建立反脆弱机制防止人才流失导致业务崩塌，次级目标是逐步摆脱对个人管理的过度依赖。
+    ecology: 财务岗位空缺、招聘体系不成熟、秘书处能力断层，团队运转高度依赖创始人的直接干预和个人关系纽带。
+    frame: 将财务离职理解为一次团队韧性的压力测试（"反脆弱实验"），认为只要能维持住基本盘就证明组织在成熟；但随后发现简单的"招人补位"不足以解决根本问题——制度化虽然必要，却会丧失人治时期的组织温度。
+    dynamics: 从应急响应（补招+纪律整顿）向深层设计演化，核心张力在于：如何在建立法治的同时保留人情温度。
+  relations:
+  - source: org
+    target: meta
+    relation_type: conflict
+    confidence: medium
+    description: 组织管理的制度化需求（法治）与温度保留（人治）之间需保持平衡，而元职能的纯粹标准化倾向若过度推进将加速组织温度流失，偏离org意图寻求的中间态
+  - source: org
+    target: health
+    relation_type: trigger
+    confidence: high
+    description: 财务离职冲击（组织韧性压力测试）直接触发身心健康危机——高强度应对、不确定性焦虑、工作量激增加剧疲劳和无意义感
+intentions:
+- id: 7e112fcc-c1dd-4c43-b00a-56e9a8c4b4bc
+  title: 建立反脆弱的团队运作机制
+  description: 让团队在核心成员流失等冲击下维持基本盘，形成反脆弱能力
+  motivation: 财务离职事件暴露了团队韧性缺口，需要从被动应对转向主动设计
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: middle
+    label: 中层
+    description: 为顶层意图服务的阶段性目标
+  priority:
+    name: high
+    label: 高
+    description: 独占当周首要关注，财务离职后优先级提升
+  trigger:
+    name: persistent
+    label: 持续
+    description: 直到反脆弱机制内化为团队默认运作方式
+  risk:
+    name: medium
+    label: 中
+    description: 短期反脆弱与长期文化转型的节奏难以并行
+- id: 4cdb95b0-fe1b-4d8a-9c5e-d28874930ae7
+  title: 实现从人治到法治的文化转型
+  description: 在制度化的同时保留人情温度，找到法治与人治的中间态
+  motivation: 制度化后人情温度流失，需要以意图共识而非制度强制来维持秩序
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: top
+    label: 顶层
+    description: 为所有意图提供元框架和方向
+  priority:
+    name: high
+    label: 高
+    description: 与反脆弱同属组织管理核心议题，共享注意力
+  trigger:
+    name: persistent
+    label: 持续
+    description: 直到制度与文化达到平衡
+  risk:
+    name: high
+    label: 高
+    description: 中间态的具体形态尚未明确，可能通过意图工程间接实现
+thoughts:
+- 2026-06-01.md
+- 2026-06-02.md
+- 2026-06-03.md
+- 2026-06-04.md
+- 2026-06-05.md
+- 2026-06-06.md
+- 2026-06-07.md

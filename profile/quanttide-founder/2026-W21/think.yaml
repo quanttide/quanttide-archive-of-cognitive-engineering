@@ -1,0 +1,154 @@
+schemas:
+- usage: 当需要精确描述认知结构之间的关系，用数学工具对认知工程进行形式化建模时使用
+  entities:
+  - name: 范畴论
+    attributes:
+    - 提供映射与组合的精确概念
+    - 适用于描述认知结构之间的关系
+    - 形式化程度需与灵活性平衡
+  - name: 认知工程
+    attributes:
+    - 需要精确描述认知结构关系
+    - 自然语言描述存在歧义
+    - 形式化是手段而非目的
+  - name: 形式化语言
+    attributes:
+    - 精确描述但可能过度约束
+    - 为探索提供清晰边界而非牢笼
+    - 需在实践中逐步提取理论
+  causals:
+  - condition: 自然语言描述认知结构不够精确，概念之间存在歧义和模糊地带
+    outcome: 需要范畴论提供形式化语言，用数学工具精确描述认知结构之间的关系
+  - condition: 过度形式化，追求精确性而牺牲探索空间
+    outcome: 形式化工具变成约束而非助力——形式化与灵活性需要动态平衡，在实践中提取理论而非理论先行
+  boundaries:
+  - 适用于认知结构之间关系的形式化描述，不适用于认知内容的语义解释
+  - 假设使用者具备基本范畴论概念（映射、组合、函子），不适用于零基础学习者
+  - 适用于概念体系有一定积累后的形式化阶段，不适用于探索初期
+  properties:
+  - key: 工具定位
+    value: 认知工程的形式化语言
+  - key: 核心概念
+    value: 映射（morphism）与组合（composition）
+  - key: 使用原则
+    value: 在实践中提取理论，而非学完理论再实践
+  - key: 核心张力
+    value: 形式化的精确性 vs 探索空间的灵活性
+  dynamics:
+  - key: 描述方式
+    value: 从自然语言描述到形式化建模
+  - key: 形式化程度
+    value: 适度形式化——足够精确但不扼杀探索
+  mappings:
+  - intent: 用范畴论形式化认知工程
+    motivation: 自然语言描述不够精确，概念边界模糊导致沟通和理解成本高
+    action: 运用范畴论的映射与组合概念对认知结构之间的关系进行形式化建模，在实践中逐步提取理论框架，保持形式化与灵活性的动态平衡
+    trigger: persistent
+    risk: high
+  biases:
+  - id: 660e8400-e29b-41d4-a716-446655440011
+    belief: 认为形式化程度越高越好，精确的数学描述能完全捕捉认知结构
+    fact: 过度形式化会扼杀探索空间——形式化与灵活性需要平衡，从学到用的转变提醒我们：不是先学完整理论再实践，而是在实践中提取理论
+situations:
+- id: d4e5f6a7-b8c9-0123-defa-234567890121
+  name: think
+  label: 认知工程
+  content:
+    agenda: 将认知过程外化为可独立运行的双系统（System Two + System One），实现从人工监督到半监督再到自主演化的渐进过渡。
+    ecology: 认知系统溢出感和进度条满的感知、System Two 显性反思与 System One 隐性习惯走向融合、外化认知系统开始脱离独立存在、通用创造力内核被识别为架构目标。
+    frame: 将认知工程理解为从思考者变成第一个看到思考结果的人——系统外化后独立演化，人类角色从执行者转向第一用户，知识工程流水线实现隐性经验显性化。
+    dynamics: 从认知系统溢出感到双系统走向融合，再到半监督状态的确立，最后通用创造力内核被识别为架构目标。
+  relations:
+  - source: think
+    target: agent
+    relation_type: support
+    confidence: medium
+    description: 认知工程的System Two显性反思与System One隐性习惯融合路径，为智能体工程的"人类立宪+AI立法"治理模式提供认知架构基础，外化认知系统是人机权责分界的理论前提
+  - source: think
+    target: meta
+    relation_type: support
+    confidence: medium
+    description: 认知工程的隐性经验显性化知识工程流水线直接支撑元职能的数据契约蒸馏方法，生成共识即知识抽取的过程与工具包即契约的代码宪法地位形成方法论对齐
+  - source: think
+    target: write
+    relation_type: support
+    confidence: medium
+    description: 认知工程的系统外化方法论为叙事工程的小说作为认知探索工具提供工程化路径，"末世→规则简化"的洞察与认知工程的简化抽象方法直接对应
+intentions:
+- id: 00c977ce-f73e-41a6-9dcf-cb2ae081384a
+  title: 外化认知系统并实现自主演化
+  description: 将认知过程外化为可独立运行的双系统，实现从监督到自主演化的渐进过渡
+  motivation: AI总结说"开始外化认知系统，让它脱离独立存在"
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: top
+    label: 顶层
+    description: 为所有其他意图提供认知架构基础
+  priority:
+    name: high
+    label: 高
+    description: 本周标志性进展——外化跨越的转折点
+  trigger:
+    name: persistent
+    label: 持续
+    description: System Two→One的知识传递闭环已初步建立
+  risk:
+    name: medium
+    label: 中
+    description: 外化程度越高对系统依赖越大，判断边界仍需人类监督
+- id: 0e1825b6-401f-4427-ac1d-6265430af385
+  title: 构建隐性经验显性化的知识工程流水线
+  description: 将founder的高密度上下文通过降维解压转化为AI可消化的知识结构
+  motivation: 发现"生成共识的过程就是知识抽取的过程"
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: middle
+    label: 中层
+    description: 为顶层"知识驱动创业"服务
+  priority:
+    name: high
+    label: 高
+    description: 0.2版本验证了核心假设，本周最重要的工程突破
+  trigger:
+    name: persistent
+    label: 持续
+    description: 元建模策略已确立
+  risk:
+    name: medium
+    label: 中
+    description: 知识抽取效率与保真度之间存在先验矛盾
+- id: 7625ba87-b89d-441e-8f88-a0ff096bd13d
+  title: 确立生产级研发的新范式
+  description: 建立"生产级实验"的混合研发模式，版本号作为迭代工具而非发布标记
+  motivation: 宣布进入生产级研发但发现是"生产级实验"的非线性切换
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: middle
+    label: 中层
+    description: 为顶层"高效研发"服务
+  priority:
+    name: medium
+    label: 中
+    description: 全周逐步结晶的范式原则
+  trigger:
+    name: persistent
+    label: 持续
+    description: 执行成本趋近于零，认知成本成为唯一瓶颈
+  risk:
+    name: medium
+    label: 中
+    description: 实验速度与生产质量之间存在张力
+thoughts:
+- 2026-05-18.md
+- 2026-05-19.md
+- 2026-05-20.md
+- 2026-05-21.md
+- 2026-05-22.md
+- 2026-05-23.md
+- 2026-05-24.md

@@ -1,0 +1,118 @@
+schemas:
+- usage: 当需要系统化管理从碎片到结构化知识的认知产出流程，加速POC到整合的循环时使用
+  entities:
+  - name: 认知生产线
+    attributes:
+    - 创新管理的核心隐喻
+    - 输入碎片和问题
+    - 输出结构化知识
+  - name: 输入
+    attributes:
+    - 碎片
+    - 问题
+    - 未结构化的发现
+  - name: 输出
+    attributes:
+    - 结构化知识
+    - 可复用的认知产物
+    - 整合后的心智模型
+  - name: AI加速器
+    attributes:
+    - 大幅降低发现成本
+    - 加速从输入到输出的转化
+    - 实现半自动化认知生产
+  - name: POC到整合的循环
+    attributes:
+    - 周期在缩短
+    - POC范式已成熟
+    - AI进一步加速循环速度
+  causals:
+  - condition: 碎片和问题作为输入进入认知生产线
+    outcome: 经过加工产出结构化知识——实现从混乱到有序的转化
+  - condition: AI介入认知生产过程
+    outcome: 大幅降低发现成本，加速从POC到整合的循环，实现从手工探索到半自动化生产
+  - condition: 认知生产线持续运转
+    outcome: POC到整合的周期不断缩短，认知产出效率持续提升
+  boundaries:
+  - 适用于认知工程领域的知识生产，不适用于实体产品生产或服务交付
+  - 假设AI工具可用且能有效降低发现成本，不覆盖无AI支持场景
+  - 不涵盖认知产出的质量控制与验证环节
+  properties:
+  - key: 生产模式
+    value: 从手工探索到半自动化认知生产
+  - key: 核心加速器
+    value: AI补全器——大幅降低发现成本
+  - key: 流程形态
+    value: 输入（碎片+问题）→ 认知生产线 → 输出（结构化知识）
+  - key: 成熟度阶段
+    value: POC范式已成熟，正加速进入整合阶段
+  dynamics:
+  - key: 生产演化
+    value: 从手工探索（人肉处理碎片）到半自动化认知生产（AI加速发现与加工）
+  - key: 循环周期
+    value: 从POC到整合的周期在持续缩短——AI降低发现成本是核心驱动力
+  mappings:
+  - intent: 加速POC到整合的循环
+    motivation: 从手工探索到半自动化认知生产
+    action: 将AI作为加速器嵌入认知生产线，系统化管理从碎片到结构化知识的转化流程，缩短发现到整合的周期
+    trigger: persistent
+    risk: low
+  biases:
+  - id: 660e8400-e29b-41d4-a716-446655440105
+    belief: 认为认知产出只能依赖个人灵感和天赋涌现——无法被系统化管理
+    fact: 认知生产可以像生产线一样被系统化管理——输入碎片和问题，通过流程加工产出结构化知识，AI是加速器
+  - id: 660e8400-e29b-41d4-a716-446655440106
+    belief: 认为POC阶段验证通过后自然就会进入整合，不需要刻意管理转化过程
+    fact: POC到整合之间存在认知加工断层——需要建立生产线式的转化流程，AI加速器是弥补断层的关键
+situations:
+- id: e5f6a7b8-c9d0-1234-efab-345678901222
+  name: innov
+  label: 创新管理
+  content:
+    agenda: 以最低成本快速验证技术想法并建立可复用的平台能力，使研发收益非线性增长。
+    ecology: 实验室模式加速开发节奏、三天写三个平台原型、以概念验证为中心的探索模式成本降到仅需 AI 运行半小时、平台研发比服务更易脱手。
+    frame: 将研发效率理解为"以概念验证为中心的标准化探索模式"——实验室是加速器，POC 是方法论，平台可脱手是战略认知。
+    dynamics: 从实验室加速开发到平台原型验证，再到 POC 标准化模式的确立，研发进入收益高成本低的非线性增长阶段。
+  relations:
+  - source: innov
+    target: think
+    relation_type: support
+    confidence: medium
+    description: 创新管理的POC标准化和实验室模式（三天写三个平台原型）为认知工程的范畴论形式化路径提供实证基础，快速验证循环产生认知工程框架建设所需的经验材料
+  - source: innov
+    target: org
+    relation_type: support
+    confidence: medium
+    description: 创新管理的"平台研发比服务更易脱手"战略认知直接支持组织管理的"使自己从日常管理中脱身"目标，平台化降低个人依赖与组织制度化追求一致
+intentions:
+- id: 163ebbdc-bad5-453a-a730-dccd10f669d2
+  title: 加速研发迭代与平台化
+  description: 以最低成本快速验证技术想法并建立可复用的平台能力
+  motivation: 实验室模式显著加速开发，POC标准化将验证成本降到极低
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: middle
+    label: 中层
+    description: 为顶层"高效研发"服务
+  priority:
+    name: high
+    label: 高
+    description: 本周最impactful的工程发现
+  trigger:
+    name: persistent
+    label: 持续
+    description: POC标准化模式已确立
+  risk:
+    name: low
+    label: 低
+    description: 研发速度与质量的张力可通过POC范式管理
+thoughts:
+- 2026-05-25.md
+- 2026-05-26.md
+- 2026-05-27.md
+- 2026-05-28.md
+- 2026-05-29.md
+- 2026-05-30.md
+- 2026-05-31.md

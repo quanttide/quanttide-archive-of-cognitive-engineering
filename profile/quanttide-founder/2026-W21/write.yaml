@@ -1,0 +1,91 @@
+schemas:
+- usage: 当需要从自由创作转向结构化创作，用Review/Reflection/Rewrite框架提升创作效率和产出质量时使用
+  entities:
+  - name: 叙事工程
+    attributes:
+    - 结构化创作方法
+    - 提供创作脚手架而非限制创造力
+    - 从自由探索到工具体系化
+  - name: 3R方法论
+    attributes:
+    - Review（审阅）
+    - Reflection（反思）
+    - Rewrite（重写）
+    - 构成完整的创作迭代循环
+  - name: 创作脚手架
+    attributes:
+    - 释放创造力而非限制创造力
+    - 让创作效率更高
+    - 需要实际使用验证和迭代
+  causals:
+  - condition: 创作原型初步验证了结构化方法的可行性
+    outcome: Review/Reflection/Rewrite框架开始成型，叙事工程作为结构化创作方法具有实用价值
+  - condition: 从自由创作转向结构化工具体系
+    outcome: 创作效率提升，但需注意方法论本身不应成为创造力的束缚
+  boundaries:
+  - 适用于需要结构化产出的创作场景（技术写作、知识整理等），不适用于纯艺术创作
+  - 假设创作者有基本的自省和迭代意愿，不适用于完全拒绝结构化的自由表达场景
+  - 不涵盖创作内容的评价标准和审美判断
+  properties:
+  - key: 方法论
+    value: Review → Reflection → Rewrite（3R循环）
+  - key: 定位
+    value: 结构化创作方法而非创作理论
+  - key: 设计原则
+    value: 脚手架释放创造力而非限制创造力
+  dynamics:
+  - key: 创作模式
+    value: 从自由创作到结构化工具体系
+  - key: 方法论成熟度
+    value: 从原型验证到框架成型打磨
+  mappings:
+  - intent: 打磨叙事工程3R方法论
+    motivation: 创作原型验证了结构化方法的可行性，需要进一步打磨框架
+    action: 基于创作原型反馈迭代Review/Reflection/Rewrite循环，构建结构化创作工具体系，确保方法论释放而非限制创造力
+    trigger: persistent
+    risk: medium
+  biases:
+  - id: 660e8400-e29b-41d4-a716-446655440012
+    belief: 认为结构化的创作方法会限制创造力，好作品来自完全自由的表达
+    fact: 结构化方法是脚手架而非牢笼——Review/Reflection/Rewrite循环让创造力更高效地释放，自由创作与结构化方法不是对立关系
+situations:
+- id: c3d4e5f6-a7b8-9012-cdef-123456789021
+  name: write
+  label: 叙事工程
+  content:
+    agenda: 将小说创作从娱乐消遣升级为认知探索工具，找到工作与创作的接口。
+    ecology: 末世→规则简化"的洞察与知识工程方法论形成映射、小说与工作的接口首次被明确找到、事业线开始在创作中浮现、小说构建与当下情绪联系越来越紧密。
+    frame: 将叙事工程理解为认知投射的接口——小说中的幻想对应现实渴望，末世设定简化了规则发现的过程，创作与工作的连接使小说从消遣升级为认知工具。
+    dynamics: 从幻想对应现实渴望的认知到末世规则简化的洞察，再到小说与工作接口的首次发现，最后创作与情绪的紧密连接。
+intentions:
+- id: 572aac23-67ae-43af-8dfa-744011c8ae25
+  title: 通过虚构创作探索认知接口
+  description: 通过小说创作探索虚构世界观与现实认知工具的接口，使创作成为认知探索的平行通道
+  motivation: 发现"末世→规则简化"的洞察与知识工程方法论形成映射
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: middle
+    label: 中层
+    description: 为顶层"认知工具开发"服务
+  priority:
+    name: low
+    label: 低
+    description: 5/21首次找到"小说与工作的接口"是关键转折
+  trigger:
+    name: conditional
+    label: 条件触发
+    description: 认知接口涌现时深入探索
+  risk:
+    name: low
+    label: 低
+    description: 创作时间与工程时间存在竞争但方向已明确
+thoughts:
+- 2026-05-18.md
+- 2026-05-19.md
+- 2026-05-20.md
+- 2026-05-21.md
+- 2026-05-22.md
+- 2026-05-23.md
+- 2026-05-24.md

@@ -1,0 +1,107 @@
+schemas:
+- usage: 适用于技术负责人设计基础设施策略时参考
+  entities:
+  - name: 基础设施
+    attributes:
+    - 备份策略
+    - 工具链归属
+    - 架构边界
+  - name: 治理体系
+    attributes:
+    - 标准化
+    - 自动化
+    - 分工
+  causals:
+  - condition: 被动防守备份且工具链归属不清
+    outcome: 数据丢失风险和维护负担增加
+  - condition: 主动设计体系
+    outcome: 安全可靠平台
+  boundaries:
+  - 适用于多云端环境
+  - 排除单机简单场景
+  - 需要至少三个实例才进入抽象层
+  properties:
+  - key: 治理方式
+    value: 主动设计
+  dynamics:
+  - key: 抽象风险
+    value: 随复杂度递增
+  mappings:
+  - intent: 防数据丢失
+    action: 建立自动化备份
+  - intent: 理清工具链归属
+    action: 标准化治理
+  biases:
+  - id: d3e4f5a6-b7c8-9012-ef45-678901234567
+    belief: 备份越多越安全
+    fact: 体系化治理比堆叠备份更有效
+situations:
+- id: b2c3d4e5-f6a7-8901-bcde-f12345678901
+  name: infra
+  label: 基础设施
+  content:
+    agenda: 建立安全可靠的平台基础设施，确保代码和数据安全，同时理清运维、开发、基础设施三者的边界与分工关系。
+    ecology: 双云端同步依赖自动化链条、命令行删库风险、本机与远端架构边界模糊、工具链归属不清，缺乏标准化治理体系。
+    frame: 将备份和基础设施问题理解为"体系化治理"问题——从被动防守（备份防丢数据）升级为主动设计（消息队列、工具链分工、Rust重写），同时意识到过度抽象本身也是风险。
+    dynamics: 从备份策略到消息队列与工具链归属，再到 Rust 重写与抽象哲学反思，先点后面，先具体后抽象。
+  relations:
+  - source: infra
+    target: innov
+    relation_type: support
+    confidence: medium
+    description: 安全可靠的平台基础设施（自动化备份、消息队列、Rust重写）为快速POC探索提供稳定的实验环境，降低实验风险和数据丢失成本
+intentions:
+- id: 8dcaa1e1-e77e-453c-9d02-1f93ce70ac39
+  title: 构建安全可靠的平台基础设施
+  description: 建立自动化的备份与同步体系，确保代码和数据安全
+  motivation: 命令行删库风险暴露了基础设施薄弱环节，需要从被动防守升级为主动设计
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: bottom
+    label: 底层
+    description: 为上层意图提供基础条件保障
+  priority:
+    name: high
+    label: 高
+    description: 基础设施安全决定上层创新的安全边界
+  trigger:
+    name: persistent
+    label: 持续
+    description: 直到基础设施达到可自主维护状态
+  risk:
+    name: low
+    label: 低
+    description: 技术路径明确（双云端同步、消息队列、Rust重写）
+- id: 3c13e0f9-0509-4517-852e-12c207838a58
+  title: 理清工具链的归属与分工
+  description: 确定运维、开发、基础设施三者的边界和协作关系
+  motivation: 实践中发现工具链归属不清导致架构熵增
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: bottom
+    label: 底层
+    description: 为上层意图提供基础条件保障
+  priority:
+    name: low
+    label: 低
+    description: 基础设施的子问题，等待主架构稳定后处理
+  trigger:
+    name: conditional
+    label: 条件触发
+    description: 基础设施架构稳定后
+  risk:
+    name: low
+    label: 低
+    description: code/infra/devops 分工模型已初步确立
+thoughts:
+- 2026-06-01.md
+- 2026-06-02.md
+- 2026-06-03.md
+- 2026-06-04.md
+- 2026-06-05.md
+- 2026-06-06.md
+- 2026-06-07.md

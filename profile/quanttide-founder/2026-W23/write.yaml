@@ -1,0 +1,82 @@
+schemas:
+- usage: 适用于产品经理管理框架演化时参考
+  entities:
+  - name: 写作云
+    attributes:
+    - 原型
+    - 框架
+  - name: 方法论
+    attributes:
+    - 3R
+    - 本体关系
+  causals:
+  - condition: 原型验证可行
+    outcome: 框架成型
+  - condition: 整合力量驱动
+    outcome: 上升循环推进
+  boundaries:
+  - 适用于叙事工程
+  - 排除非结构化写作
+  - 需要足够碎片积累后才能整合
+  properties:
+  - key: 成长模式
+    value: 从原型迭代成型
+  dynamics:
+  - key: 迭代周期
+    value: 随整合加速
+  mappings:
+  - intent: 打磨写作云
+    action: 从原型到框架迭代
+  - intent: 驱动上升循环
+    action: 利用整合力量
+  biases:
+  - id: d9e0f1a2-b3c4-5678-0123-456789012345
+    belief: 框架可一次性建成
+    fact: 需要从原型迭代成型
+situations:
+- id: c3d4e5f6-a7b8-9012-cdef-123456789012
+  name: write
+  label: 叙事工程
+  content:
+    agenda: 建立一套标准化的叙事创作工具链，让 AI 辅助而非替代人类创作，打磨写作云产品框架。
+    ecology: 写作云原型刚发现、碎片待整合、契约测试作为前后端融合入口、人物驱动实验成功替代旧方案、母题合并到故事作为本体。
+    frame: 将写作云建设理解为从原型验证到框架成型的迭代过程——3R 方法论（Review/Reflection/Rewrite）提供结构，母题和风格的范畴关系提供本体，整合的力量推动上升循环。
+    dynamics: 从原型发现到碎片整合与契约测试，再到叙事工程框架成型，母题合并到故事、风格重新定义，贯穿一周的持续迭代。
+  relations:
+  - source: write
+    target: product
+    relation_type: support
+    confidence: medium
+    description: 写作云的叙事工程框架（3R方法论、母题与风格本体关系）为可编辑阅读器提供了具体的创作场景和内容实验素材，范式关键词（框架/边界/迭代）在两者Frame中共现
+intentions:
+- id: 17a23847-5e4f-41d2-9176-0e4ff1796d2d
+  title: 打磨写作云与叙事工程框架
+  description: 建立标准化的叙事创作工具链，让 AI 辅助而非替代人类创作
+  motivation: 写作云原型发现后经历了碎片整合到框架成型的完整演进
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: middle
+    label: 中层
+    description: 为顶层意图服务的阶段性目标
+  priority:
+    name: high
+    label: 高
+    description: 一周内从原型走向成型，进展显著
+  trigger:
+    name: persistent
+    label: 持续
+    description: 直到叙事工程框架稳定可用
+  risk:
+    name: medium
+    label: 中
+    description: 叙事工程的结构化与创作的自由本质之间存在张力
+thoughts:
+- 2026-06-01.md
+- 2026-06-02.md
+- 2026-06-03.md
+- 2026-06-04.md
+- 2026-06-05.md
+- 2026-06-06.md
+- 2026-06-07.md

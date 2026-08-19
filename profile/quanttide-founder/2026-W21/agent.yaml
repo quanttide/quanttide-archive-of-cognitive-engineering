@@ -1,0 +1,96 @@
+schemas:
+- usage: 当需要从通用框架探索转向场景驱动开发，收敛AI智能体研发方向时使用
+  entities:
+  - name: AI智能体
+    attributes:
+    - 多个垂直原型正在运行中
+    - 协调需求随数量增加
+    - 智能体边界开始清晰
+  - name: 场景
+    attributes:
+    - 高价值场景需要从探索中收敛
+    - 决定能力构建的方向和优先级
+    - 比框架更贴近实际需求
+  - name: 通用框架
+    attributes:
+    - 探索成本高且效果不明确
+    - 容易陷入空泛的理论构建
+    - 缺乏具体场景的反馈校准
+  causals:
+  - condition: 通用框架探索成本高，缺乏具体场景反馈校准
+    outcome: 需要转向场景驱动——先找到高价值场景再构建通用能力，而非先搭框架再找场景
+  - condition: 多个垂直智能体原型运行中，协调需求增加
+    outcome: 智能体边界开始清晰，为从场景收敛到通用能力提供现实基础
+  boundaries:
+  - 假设已有垂直智能体原型可验证场景价值，不适用于完全从零构建智能体的阶段
+  - 适用于探索后期需要收敛方向时，不适用于尚未探索任何场景的初期
+  - 不涵盖智能体底层模型训练与算法调优
+  properties:
+  - key: 驱动模式
+    value: 场景驱动而非框架驱动
+  - key: 收敛策略
+    value: 从通用探索到高价值场景聚焦
+  - key: 核心原则
+    value: 先有场景验证，后有通用能力
+  dynamics:
+  - key: 范式转换
+    value: 从通用框架探索到场景驱动开发
+  - key: 能力构建
+    value: 从多原型并行到高价值场景收敛
+  mappings:
+  - intent: 聚焦高价值智能体场景
+    motivation: 通用框架探索成本高且缺乏反馈校准
+    action: 收敛探索范围至具体开发场景，从高价值场景反向构建通用能力，以实际需求驱动框架演化
+    trigger: persistent
+    risk: medium
+  biases:
+  - id: 660e8400-e29b-41d4-a716-446655440007
+    belief: 认为智能体研发应先搭建好通用框架，再应对各种具体场景
+    fact: 先找到高价值场景再构建通用能力更高效——场景驱动比框架驱动更贴近实际需求，避免空泛的理论构建
+situations:
+- id: b8c9d0e1-f2a3-4567-bcde-678901234521
+  name: agent
+  label: 智能体工程
+  content:
+    agenda: 将 AI 智能体和规则引擎纳入组织架构，明确人类、AI、规则三者的权责边界，实现人类立宪与 AI 立法的协作模式。
+    ecology: 权责清单由 AI 主动编写、组织架构向系统延伸（智能体和规则引擎成为组织成员）、人类从执行者变为思考者和第一用户、多智能体关系保存机制被提出。
+    frame: 将人机分工理解为组织架构的重构——人类立宪（定义原则和边界），AI 立法（在原则范围内制定规则），规则执行，三者构成新的组织形态。
+    dynamics: 从权责清单尝试到组织架构延伸，再到人类立宪 AI 立法模式的成型，最后多智能体关系保存机制被提出。
+  relations:
+  - source: agent
+    target: meta
+    relation_type: conflict
+    confidence: medium
+    description: 智能体工程的"人类立宪"需要自上而下的原则性框架，元职能的"从实际问题蒸馏"强调自下而上的问题驱动标准化，两种治理哲学在方法论层面存在取向冲突
+intentions:
+- id: d99b852a-3e02-4a7f-9d4c-50a9d7ee545b
+  title: 设计人机协同的权责体系与组织架构
+  description: 将AI智能体和规则引擎纳入组织架构，实现"人类立宪+AI立法"的协作模式
+  motivation: 发现AI在区分自身权责上有困难，需要"原规则"
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: top
+    label: 顶层
+    description: 为所有协作活动提供组织框架
+  priority:
+    name: high
+    label: 高
+    description: 本周最具前瞻性的意图
+  trigger:
+    name: persistent
+    label: 持续
+    description: 多智能体关系保存机制已被提出但尚未实现
+  risk:
+    name: high
+    label: 高
+    description: 人类立宪需要预见性，太多未知可能使宪法过于宽泛或过于僵化
+thoughts:
+- 2026-05-18.md
+- 2026-05-19.md
+- 2026-05-20.md
+- 2026-05-21.md
+- 2026-05-22.md
+- 2026-05-23.md
+- 2026-05-24.md

@@ -1,0 +1,77 @@
+schemas:
+- usage: 适用于设计师思考AI交互范式时参考
+  entities:
+  - name: AI表达
+    attributes:
+    - 多样化
+    - 超越传统
+  - name: 交互范式
+    attributes:
+    - 阅读器
+    - 编辑器
+    - 块编辑器
+  causals:
+  - condition: AI表达超越传统文档边界
+    outcome: 传统编辑器不适应
+  - condition: 从阅读器角度重新设计
+    outcome: 适应AI协作
+  boundaries:
+  - 适用于AI协作场景
+  - 排除传统文档编辑
+  - 需要AI底层操作足够可靠
+  properties:
+  - key: 核心假设
+    value: 阅读为主，编辑为辅
+  dynamics:
+  - key: 适应度
+    value: 随范式转变提升
+  mappings:
+  - intent: 适应AI表达
+    action: 设计可编辑阅读器
+  - intent: 缓解AI注意力不足
+    action: 分解组件分别设计
+  biases:
+  - id: b7c8d9e0-f1a2-3456-8901-234567890123
+    belief: 改进UI技巧即可
+    fact: 需要范式级重构
+situations:
+- id: b8c9d0e1-f2a3-4567-bcde-678901234567
+  name: product
+  label: 产品研发
+  content:
+    agenda: 解决现有编辑器和文档工具不适应 AI 表达习惯的问题，探索可编辑阅读器等新交互范式。
+    ecology: 现有编辑器/文档工具无法适应 AI 多样化表达、分解组件设计可缓解 AI 注意力不足、可编辑阅读器成为候选范式、块编辑器思想提供实现路径。
+    frame: 将交互设计理解为范式层面的问题而非 UI 技巧问题——AI 的表达形式已超越传统文档工具的能力边界，需要从阅读器而非编辑器的角度重新思考交互。
+    dynamics: 从 UI 实现技巧（分解组件）上升到交互范式思考（可编辑阅读器、块编辑器），是技术方案到范式认知的演进。
+intentions:
+- id: 29f7e916-8634-4fa0-9b3b-f763bae1b471
+  title: 设计适应 AI 协作的交互范式
+  description: 探索可编辑阅读器等适应 AI 表达习惯的新交互范式
+  motivation: 现有编辑器和文档工具无法适应 AI 日益多样化的表达形式
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: middle
+    label: 中层
+    description: 为顶层意图服务的阶段性目标
+  priority:
+    name: low
+    label: 低
+    description: 远期探索，范式方向尚未收敛
+  trigger:
+    name: conditional
+    label: 条件触发
+    description: 当前工具形成明确瓶颈时深入
+  risk:
+    name: high
+    label: 高
+    description: 范式方向（可编辑阅读器）尚未被验证
+thoughts:
+- 2026-06-01.md
+- 2026-06-02.md
+- 2026-06-03.md
+- 2026-06-04.md
+- 2026-06-05.md
+- 2026-06-06.md
+- 2026-06-07.md

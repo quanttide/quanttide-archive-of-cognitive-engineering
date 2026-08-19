@@ -1,0 +1,136 @@
+schemas:
+- usage: 当需要理解或构建人与AI协作的认知框架时使用
+  entities:
+  - name: 认知工程
+    attributes:
+    - 元工程（关于"如何思考"的工程学）
+    - 区别于传统工程（解决"做什么"）
+    - 核心问题：如何决定做什么
+  - name: 人机协作模式
+    attributes:
+    - 人类提供反馈与反思
+    - AI提供结构化处理能力
+    - 双向辩论与校准
+  - name: 意图工程
+    attributes:
+    - 人类意图驱动的结构化生成
+    - 统一生成过程的基础概念
+  - name: 二阶控制论
+    attributes:
+    - 观察者参与系统
+    - 自我指涉的认知循环
+  causals:
+  - condition: 概念体系庞杂，全面学习导致认知混乱
+    outcome: 需要面向需求学而非全面学——以问题为锚点组织知识
+  - condition: 单一AI自收敛存在局限性，缺乏外部校准
+    outcome: 需要建立人机协同的反思与辩论模型，引入人类反馈机制
+  - condition: 所有人类意图驱动的结构化生成过程共享统一模式
+    outcome: 意图工程作为认知工程的核心方法论具有可行性
+  boundaries:
+  - 仅适用于认知工程领域，不适用于已成熟定型的工程领域
+  - 假设人机协作为主要工作模式，不覆盖纯人工或纯自动化场景
+  - 不涵盖传统工程项目管理中的资源调度与执行控制
+  properties:
+  - key: 理论根基
+    value: 二阶控制论
+  - key: 方法论核心
+    value: 意图工程
+  - key: 实践模式
+    value: 人机协同反思与辩论
+  dynamics:
+  - key: 演化阶段
+    value: 从模糊的概念探索到初步的方法论框架
+  - key: 认知深度
+    value: 从无意识到有意识的元认知建设
+  mappings:
+  - intent: 建立人机协同的反思与辩论模型
+    action: 引入人类反馈机制，设计双向辩论流程，弥补AI自收敛不足
+  - intent: 探索意图工程的可行性
+    action: 系统梳理人类意图驱动的结构化生成过程，统一概念框架
+  biases:
+  - id: 660e8400-e29b-41d4-a716-446655440001
+    belief: 认为学得越多越好——只有全面学习才能真正掌握一个领域
+    fact: 面向需求的学习更高效：以实际问题为锚点组织概念，避免认知过载
+  - id: 660e8400-e29b-41d4-a716-446655440002
+    belief: 认为好的设计在自然演化中自然形成，不需要刻意设计
+    fact: 好的设计需要在自然演化与主动设计之间取得平衡——演化提供素材，设计提供方向
+situations:
+- id: d4e5f6a7-b8c9-0123-defa-234567890119
+  name: think
+  label: 认知工程
+  content:
+    agenda: 建立以二阶控制论为框架的认知工程方法论，在认知尚未收敛时通过涌现和表达速度加速框架成型，实现从观察到创造的认知跃迁。
+    ecology: 二阶控制论（原控制/控制规则）被智谱点醒、"原来这就是涌现"的认知突破、"把阻碍当需求"和"更快出来反复改"的方法论形成、从细节到全貌的认知断裂被识别、人类工作从执行变为观察和提供思路。
+    frame: 将认知工程理解为对人类思考方式提供"原规则"——二阶控制论是元框架，涌现是框架成型的方式，表达速度优先于系统设计，阻碍本身就是需求的来源，自我繁殖和自我增长是系统愿景。
+    dynamics: 从二阶控制论的理论突破到涌现的发现，再到表达速度优先和反复改的方法论确立，最后到细节到全貌断裂的结构性反思和自我繁殖愿景。
+  relations:
+  - source: think
+    target: agent
+    relation_type: support
+    confidence: medium
+    description: 认知工程的二阶控制论和意图工程为智能体工程的"以人类意图为中心"协作范式提供元框架，Frame中"人类意图"核心实体在两者间共现
+  - source: think
+    target: meta
+    relation_type: conflict
+    confidence: medium
+    description: 认知工程的"涌现"方法论追求表达速度和迭代，元职能要求标准化和结构显性化，think意图风险已明确指出"涌现方法论追求速度，与标准化追求稳定之间存在根本方法论张力"
+  - source: think
+    target: infra
+    relation_type: support
+    confidence: medium
+    description: 二阶控制论的"观察者参与系统"认知框架直接支撑基础设施的可观测性驱动理念，内观/外观视角分离与认知工程的自我指涉循环同构
+intentions:
+- id: f6892150-f603-4c47-a67c-a4daaf1c4f89
+  title: 建立以二阶控制论为框架的认知工程方法论
+  description: 以二阶控制论为框架将观察置于干预之前，让AI理解人类意图，加速认知收敛
+  motivation: 智谱点醒"二阶控制论"概念，与自己的直觉高度吻合
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: top
+    label: 顶层
+    description: 为所有其他意图提供元框架
+  priority:
+    name: medium
+    label: 中
+    description: 理论框架确立但执行层面存在结构性障碍
+  trigger:
+    name: persistent
+    label: 持续
+    description: 作为认知工程的长期理论框架
+  risk:
+    name: medium
+    label: 中
+    description: 理论高抽象度与"从细节到全貌"的具体执行路径之间存在断裂
+- id: d864d716-e1fd-412b-80b1-016b10f15353
+  title: 建立以涌现为核心的快速研发方法论
+  description: 在认知未收敛时通过追求表达速度和重构中的涌现来替代传统前置系统设计
+  motivation: 发现"原来这就是涌现"——框架不在设计时确定而在重构中涌现
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: middle
+    label: 中层
+    description: 为顶层"高效研发"服务的方法论目标
+  priority:
+    name: high
+    label: 高
+    description: 05-05涌现突破是全周的重要认知节点
+  trigger:
+    name: persistent
+    label: 持续
+    description: 作为研发方法论的长期指导原则
+  risk:
+    name: medium
+    label: 中
+    description: 涌现方法论追求速度，与标准化追求稳定之间存在根本方法论张力
+thoughts:
+- 2026-05-04.md
+- 2026-05-05.md
+- 2026-05-06.md
+- 2026-05-07.md
+- 2026-05-08.md
+- 2026-05-09.md
+- 2026-05-10.md

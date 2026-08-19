@@ -1,0 +1,82 @@
+schemas:
+- usage: 适用于治理者评估系统成熟度时参考
+  entities:
+  - name: 元智能
+    attributes:
+    - 标准化
+    - 自我维护
+  - name: 系统
+    attributes:
+    - 成熟度
+    - 规则依赖
+  causals:
+  - condition: 元智能成熟
+    outcome: 系统自我维护
+  - condition: 元智能不成熟
+    outcome: 规则依赖人工维护
+  boundaries:
+  - 适用于系统治理体系
+  - 排除一次性规则制定
+  - 需要系统运行至少三个月有足够演化数据
+  properties:
+  - key: 治理目标
+    value: 系统自我维护
+  dynamics:
+  - key: 成熟度演化
+    value: 随迭代递增
+  mappings:
+  - intent: 建立标准化
+    action: 归并冗余规则集
+  - intent: 提升系统成熟度
+    action: 培养元智能而非推动标准化本身
+  biases:
+  - id: f5a6b7c8-d9e0-1234-6789-012345678901
+    belief: 标准化是终点工作
+    fact: 标准化是元智能的自然产出
+situations:
+- id: f6a7b8c9-d0e1-2345-fabc-456789012345
+  name: meta
+  label: 元
+  content:
+    agenda: 通过合并冗余领域、统一命名规范、明确 1.0 标准，降低系统维护负担，将标准化沉淀为元智能的自然产出。
+    ecology: 标准化职能被合并回元职能、缩写从三套规则归并为两套、边界稳定清晰作为 1.0 标志、元智能成熟度直接体现系统成熟度。
+    frame: 将标准化理解为元智能成熟度的自然产出而非一次性工作——标准化的终点不是规则文档，而是系统自我维护的元能力。
+    dynamics: 从标准化职能的归属问题出发，经过缩写规则归并的具体操作，收敛到 1.0 标准的定义，是一个完整的推理链条。
+  relations:
+  - source: meta
+    target: infra
+    relation_type: support
+    confidence: medium
+    description: 元智能的标准化治理方案（合并冗余规则、系统自我维护）直接解决基础设施面临的工具链归属不清和架构边界模糊问题，从被动防守升级为主动设计
+intentions:
+- id: 9ba11e9d-89ae-4018-9916-4fc436ec68c0
+  title: 确立标准化与元智能的治理体系
+  description: 合并冗余领域、统一命名规范、明确 1.0 标准
+  motivation: 领域过多、命名混乱增加了维护负担，标准化需要合并回元职能
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: middle
+    label: 中层
+    description: 为顶层意图服务的阶段性目标
+  priority:
+    name: low
+    label: 低
+    description: 背景建设任务，非当周紧急事项
+  trigger:
+    name: conditional
+    label: 条件触发
+    description: 系统边界稳定后推进
+  risk:
+    name: low
+    label: 低
+    description: 方向明确（合并回元职能、缩写规则归并）
+thoughts:
+- 2026-06-01.md
+- 2026-06-02.md
+- 2026-06-03.md
+- 2026-06-04.md
+- 2026-06-05.md
+- 2026-06-06.md
+- 2026-06-07.md

@@ -1,0 +1,98 @@
+schemas:
+- usage: 当需要将单个成功案例的经验推广为可复制的标准化商务流程时使用
+  entities:
+  - name: 章程化商务
+    attributes:
+    - 标准化产出流程的核心
+    - 已验证一个案例跑通
+    - 其他领域的迁移思考开始涌现
+    - 可复制性有待验证
+  - name: 商业模式验证
+    attributes:
+    - 理解成POC范式在商业领域的应用
+    - 用最小成本验证假设
+    - 再决定是否扩大投入
+    - 从单点验证到多模式探索
+  causals:
+  - condition: 已有一个章程化案例跑通但未验证通用性
+    outcome: 需要验证章程化商务的可复制性——一个案例成功不等于模式成熟
+  - condition: 其他领域的迁移思考开始涌现
+    outcome: 需要建立系统的验证框架来评估不同领域的适用性
+  boundaries:
+  - 适用于已有成功案例的知识服务类业务，不适用于全新未经验证的商业模式
+  - 假设章程模板已初步建立，不适用于完全定制化或非标准化的商务场景
+  - 验证本身也是POC——不追求一次性完备验证
+  properties:
+  - key: 验证范式
+    value: POC范式在商业领域的应用——先小成本验证再扩大投入
+  - key: 扩展策略
+    value: 从单点验证到多模式探索
+  - key: 核心假设
+    value: 一个案例跑通不等同于可复制——需跨领域验证通用性
+  dynamics:
+  - key: 成熟度演化
+    value: 从单点案例成功到多领域可复制验证
+  - key: 验证深度
+    value: 从有没有到能不能——从存在性验证到可复制性验证
+  mappings:
+  - intent: 验证章程化商务的可复制性
+    motivation: 一个案例跑通后需要验证通用性，避免将偶然成功误判为模式成熟
+    action: 梳理已验证案例的关键要素，选择不同领域的迁移场景进行POC验证，形成系统验证框架
+    trigger: conditional
+    risk: high
+  biases:
+  - id: 660e8400-e29b-41d4-a716-446655440012
+    belief: 认为一个案例跑通即代表商业模式已成熟，可直接复制到其他领域
+    fact: 单个案例成功可能是特定情境下的偶然——可复制性需要跨领域POC验证才能确认
+situations:
+- id: a7b8c9d0-e1f2-3456-abcd-567890123420
+  name: business
+  label: 商务拓展
+  content:
+    agenda: 在营收压力和团队流动的挑战中找到增长路径，建立更规范的团队管理制度和更可靠的"组织记忆"。
+    ecology: 合作伙伴表达合作意向、人员离职流动加大、管理风格转向"六亲不认"、组织记忆成为平台建设的业务驱动力、商业压力直接转化为产品需求。
+    frame: 将商业运营理解为与团队管理高度耦合的挑战——商业压力驱动管理风格转型，组织记忆的需求从商业烦恼中涌现，商业压力转化为产品需求是重要洞察。
+    dynamics: 从合作意向到营收压力认知，再到管理风格转型和招聘抓取，最后组织记忆需求成为平台建设的驱动力。
+  relations:
+  - source: business
+    target: health
+    relation_type: trigger
+    confidence: medium
+    description: 人员离职冲击和营收压力直接触发身体疲惫峰值和情感隔离应对策略，商业焦虑转化为"不敢说困难"在现实与创作中的同构觉察
+  - source: business
+    target: innov
+    relation_type: support
+    confidence: medium
+    description: 商业压力直接转化为产品需求，组织记忆需求成为平台建设的业务驱动力，营收紧迫性为创新管理的重构循环提供外部节奏约束
+intentions:
+- id: efb6a081-27fb-4aed-b4a2-38c449f1ef85
+  title: 实现可持续的商业增长与团队建设
+  description: 在营收压力和团队流动的挑战中建立更规范的团队管理制度和更可靠的组织记忆
+  motivation: 人员离职流动加大，管理风格经历"六亲不认"的转型
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: middle
+    label: 中层
+    description: 为顶层"可持续创业"服务
+  priority:
+    name: high
+    label: 高
+    description: 05-14管理风格转型是关键节点
+  trigger:
+    name: persistent
+    label: 持续
+    description: 组织记忆成为平台建设的业务驱动力
+  risk:
+    name: medium
+    label: 中
+    description: 过于强硬的制度化管理可能削弱团队凝聚力
+thoughts:
+- 2026-05-11.md
+- 2026-05-12.md
+- 2026-05-13.md
+- 2026-05-14.md
+- 2026-05-15.md
+- 2026-05-16.md
+- 2026-05-17.md

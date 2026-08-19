@@ -1,0 +1,104 @@
+schemas:
+- usage: 当需要系统化地进行创新验证，在投入资源前用最小成本确认假设时使用
+  entities:
+  - name: POC验证
+    attributes:
+    - 快速验证的核心手段
+    - 默认日志做POC的效果已验证
+    - 低耗能模式下仍可持续产出
+    - 从单点POC到系统化创新流程
+  - name: 创新循环
+    attributes:
+    - 探索-验证-整合的循环
+    - POC是发现的手段
+    - 整合是收敛的机制
+    - 从单点POC到系统化创新流程
+  causals:
+  - condition: 缺乏快速验证机制，创新思路需大量投入后才能判断可行性
+    outcome: 需要建立POC快速验证范式，以最小成本验证假设再决定是否扩大投入
+  - condition: 疲劳状态下传统创新探索模式难以维持
+    outcome: 低耗能模式（如利用AI补全）可维持基本产出，降低创新门槛
+  boundaries:
+  - 适用于假设验证阶段的创新探索，不适用于已确认方向后的规模化开发
+  - 假设有可使用的日志或数据作为POC素材，不适用于完全无数据支撑的探索
+  - POC结果仅用于决策参考，不替代完整的可行性分析
+  properties:
+  - key: 验证原则
+    value: 以最小成本验证假设——POC决定了投入与否，而非投入多少
+  - key: 循环结构
+    value: 探索 → POC验证 → 整合收敛
+  - key: 可持续策略
+    value: 高能耗模式（深度POC）+ 低能耗模式（AI辅助维持基本产出）
+  dynamics:
+  - key: 范式演化
+    value: 从单点POC到系统化创新流程
+  - key: 产出弹性
+    value: 从疲劳期零产出的低能耗模式维持基本产出
+  mappings:
+  - intent: 建立POC快速验证范式
+    motivation: 默认日志做POC效果已验证，需要从偶发实践上升为系统化方法
+    action: 建立以最小成本验证假设的POC流程，从默认日志中提取验证素材，形成探索-验证-整合的闭环
+    trigger: persistent
+    risk: low
+  - intent: 利用低耗能模式维持产出
+    motivation: 疲劳状态下AI补全可维持基本产出，避免探索中断
+    action: 在疲劳或低能量阶段切换至低耗能模式，利用AI补全能力维持基础产出
+    trigger: conditional
+    risk: low
+  biases:
+  - id: 660e8400-e29b-41d4-a716-446655440015
+    belief: 认为创新需要大量投入和完整方案才能开始验证，小规模验证不够严谨
+    fact: POC验证的核心价值就是小成本验证——用最小资源快速判断假设是否值得继续投入
+situations:
+- id: e5f6a7b8-c9d0-1234-efab-345678901220
+  name: innov
+  label: 创新管理
+  content:
+    agenda: 建立以重构为核心的标准化研发循环（探索→重构→收敛→产出），将软件开发从无序推进转变为可控的精炼过程。
+    ecology: 重构与开发 1:1 工作量比例确立、重构是 Vibe Coding 第一等公民的口号形成、重构循环被整合进产品研发流程。
+    frame: 将研发体系理解为以重构为中心的持续精炼循环——重构是收敛混乱的手段，1:1 比例是纪律，重构即探索的有机组成部分。
+    dynamics: 从重构实践的操作原则到方法论口号的提炼，再到重构循环与产品研发流程的整合，呈从实践到理论的演进。
+  relations:
+  - source: innov
+    target: agent
+    relation_type: support
+    confidence: medium
+    description: 创新管理的重构循环方法论与智能体工程的Vibe Coding理念共享同一核心实体，重构作为Vibe Coding第一等公民直接支撑System
+      One/Two架构的迭代效率
+  - source: innov
+    target: infra
+    relation_type: support
+    confidence: medium
+    description: 创新管理的重构即探索方法论为基础设施的"自我标准化"提供可操作的工程循环，标准作为核心价值的认知在两者Frame中同步涌现
+intentions:
+- id: e3e1ed2e-e3e9-4bd6-a261-b8cdfc911b38
+  title: 建立以重构为中心的研发体系
+  description: 将软件开发从无序推进转变为以重构为核心的标准化研发循环
+  motivation: 实践中发现开发和重构应以1:1比例并行
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: middle
+    label: 中层
+    description: 为顶层"高效可持续的研发"服务
+  priority:
+    name: high
+    label: 高
+    description: 本周最早出现且贯穿始终的工程意图
+  trigger:
+    name: persistent
+    label: 持续
+    description: 作为研发体系的长期纪律
+  risk:
+    name: low
+    label: 低
+    description: 重构需要先乱后治，但与Vibe Coding的搭配已验证有效
+thoughts:
+- 2026-05-11.md
+- 2026-05-12.md
+- 2026-05-13.md
+- 2026-05-14.md
+- 2026-05-15.md
+- 2026-05-16.md
+- 2026-05-17.md

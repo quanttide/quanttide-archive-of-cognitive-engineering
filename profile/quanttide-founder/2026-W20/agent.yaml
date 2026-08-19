@@ -1,0 +1,97 @@
+schemas:
+- usage: 当需要从AI工具使用向AI协作者协作模式转型，或构建多智能体协作网络时使用
+  entities:
+  - name: AI智能体
+    attributes:
+    - 从"工具"重新理解为"协作者"
+    - 不再是人类发指令才执行的被动工具
+    - 能主动理解上下文并参与决策的协作节点
+    - 从辅助工具升级为研发管线中的自主节点
+  - name: 多智能体协作网络
+    attributes:
+    - 多个垂直AI应用开始涌现
+    - AI智能体之间的协调需求初现
+    - 工具链组合使用的复杂度在增加
+    - 从单点AI工具到多智能体协作网络的演化
+  causals:
+  - condition: 多个垂直AI应用涌现且缺乏协调机制
+    outcome: 需要构建AI智能体协作网络，从单点工具整合为协同体系
+  - condition: AI仅作为被动工具需要人类逐一下达指令
+    outcome: AI应作为协作者主动理解上下文参与决策，降低人类的调度认知负荷
+  - condition: 工具链组合复杂度持续增加消耗认知资源
+    outcome: 需要降低工具链组合复杂度，而非继续堆叠工具
+  boundaries:
+  - 仅适用于AI从工具向协作者转型的场景，不适用于纯手工或纯自动化工作流
+  - 假设AI具备一定程度的自主决策能力，不适合AI能力尚不达标的领域
+  - 不涵盖单点独立AI工具的使用场景——协作网络以互联为前提
+  properties:
+  - key: 协作模式
+    value: 从被动工具到主动协作者
+  - key: 网络形态
+    value: 从单点应用到多智能体协作网络
+  - key: 设计原则
+    value: 做减法而非加法——每个节点都应让网络整体能力更强
+  dynamics:
+  - key: 角色演化
+    value: 从辅助工具→协作者→自主节点
+  - key: 网络演化
+    value: 从单点AI工具到多智能体协作网络
+  mappings:
+  - intent: 构建AI智能体协作网络
+    motivation: 多个垂直AI应用需要协调，形成协同体系
+    action: 设计多智能体协作架构，建立智能体间的通信与协调机制，支持AI主动参与决策
+    trigger: persistent
+    risk: medium
+  - intent: 降低工具链组合复杂度
+    motivation: 工具链快速膨胀增加认知负荷，需要精简而非堆叠
+    action: 审视工具链中冗余环节，通过整合与去重降低复杂度，保留核心能力节点
+    trigger: conditional
+    risk: low
+  biases:
+  - id: 660e8400-e29b-41d4-a716-446655440010
+    belief: 认为AI只是被动响应指令的工具，本质与命令行工具无异
+    fact: AI可以成为主动协作者——自主理解上下文、参与决策、主动执行，角色远超出传统工具
+  - id: 660e8400-e29b-41d4-a716-446655440011
+    belief: 认为工具链功能越多越好，覆盖场景越广价值越大
+    fact: 做减法的智慧——每个工具都应强化核心能力，冗余功能反而增加认知负荷降低效能
+situations:
+- id: b8c9d0e1-f2a3-4567-bcde-678901234520
+  name: agent
+  label: 智能体工程
+  content:
+    agenda: 从"用 AI 工具"进化到"AI 作为系统组件"，建立 System One 与 System Two 双引擎协作架构。
+    ecology: 架构师职能被解放、"人类认知是瓶颈"的第一性原理确立、Vibe Coding 作为表达是否到位的检验标准、System One/Two 双引擎架构成型。
+    frame: 将 AI 协作理解为从工具到系统组件的跃迁——人类认知是真正的瓶颈，AI 从效率工具提升为认知扩展器，Vibe Coding 是思想到代码的检验标准。
+    dynamics: 从架构师职能被解放到流畅协作状态，再到 Vibe Coding 作为检验标准的确立，最后到 System One/Two 双引擎架构的成型。
+intentions:
+- id: 2608f560-9f81-4f1e-9c62-8e76a99e3b4b
+  title: 深化AI协作模式
+  description: 从"用AI工具"进化到"AI作为系统组件"，建立System One与System Two双引擎协作架构
+  motivation: 架构师职能被解放，"人类认知是瓶颈"的第一性原理确立
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: middle
+    label: 中层
+    description: 为顶层"AI驱动的创业体系"服务
+  priority:
+    name: medium
+    label: 中
+    description: 05-17达到思想高峰，双引擎架构成型
+  trigger:
+    name: persistent
+    label: 持续
+    description: 作为AI协作的长远架构方向
+  risk:
+    name: medium
+    label: 中
+    description: System One与System Two的协作效率需要持续校准
+thoughts:
+- 2026-05-11.md
+- 2026-05-12.md
+- 2026-05-13.md
+- 2026-05-14.md
+- 2026-05-15.md
+- 2026-05-16.md
+- 2026-05-17.md

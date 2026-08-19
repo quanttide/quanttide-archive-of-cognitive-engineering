@@ -1,0 +1,79 @@
+schemas:
+- usage: 适用于产品经理和创业者评估新想法时参考
+  entities:
+  - name: 新想法
+    attributes:
+    - 可行性
+    - 门槛
+  - name: 验证手段
+    attributes:
+    - POC
+    - 章程
+    - 原型
+  causals:
+  - condition: 新想法通过低门槛验证
+    outcome: 可行后结构化复制
+  - condition: 验证失败
+    outcome: 低成本放弃
+  boundaries:
+  - 适用于商业和研发探索
+  - 排除高投入长期项目
+  - 验证周期不超过两周
+  properties:
+  - key: 验证成本
+    value: 低
+  - key: 复制效率
+    value: 高
+  mappings:
+  - intent: 探索新商业模式
+    action: 做POC验证
+  - intent: 降低风险
+    action: 先小规模试错
+  biases:
+  - id: b1c2d3e4-f5a6-7890-bcde-f12345678901
+    belief: 所有想法都值得先投入
+    fact: 低门槛验证可快速筛选无效想法
+  - id: b1c2d3e4-f5a6-7890-bcde-f12345678902
+    belief: 验证成功就等于有商业价值
+    fact: 验证成功只是技术可行，商业价值需要独立评估
+situations:
+- id: a7b8c9d0-e1f2-3456-abcd-567890123456
+  name: business
+  label: 商务拓展
+  content:
+    agenda: 在现有咨询业务之外开拓课程、代码诊断、商业孵化器等低门槛高杠杆的新收入来源。
+    ecology: 商务报价章程验证了从章程到产出的路线可行、课程业务可低成本招募潜在咨询人才、代码诊断与小说诊断同构、命令行商业孵化器成为新想法。
+    frame: 将商业模式探索理解为商业领域的 POC——所有新想法都以"低门槛验证"为前提，验证可行后再结构化复制，与研发 POC 范式同构。
+    dynamics: 从现有商务报价的章程化推进，到三个新商业想法（课程实验、代码诊断、商业孵化器）的涌现，从执行到创新的跨度大。
+intentions:
+- id: 6a5bdd48-5096-4fcc-8fdd-b0d85b549b5c
+  title: 探索可持续的新商业模式
+  description: 开拓课程、代码诊断、商业孵化器等新收入来源
+  motivation: 商务报价章程验证了从章程到产出的路线可行，新想法涌现
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: middle
+    label: 中层
+    description: 为顶层意图服务的阶段性目标
+  priority:
+    name: low
+    label: 低
+    description: 多个早期想法并行，均处于概念验证阶段
+  trigger:
+    name: conditional
+    label: 条件触发
+    description: POC 验证可行后再结构化复制
+  risk:
+    name: high
+    label: 高
+    description: 多个早期想法尚未经过市场验证
+thoughts:
+- 2026-06-01.md
+- 2026-06-02.md
+- 2026-06-03.md
+- 2026-06-04.md
+- 2026-06-05.md
+- 2026-06-06.md
+- 2026-06-07.md

@@ -1,0 +1,92 @@
+schemas:
+- usage: 当需要将创作方法论融入认知工程框架，或探索叙事工程在知识工作中的应用定位时使用
+  entities:
+  - name: 叙事工程
+    attributes:
+    - 认知工程在创作领域的具体应用
+    - 不是独立的创作方法论
+    - 意图工程在叙事场景的实例化
+    - 与认知工程产生交集
+  - name: 写作云
+    attributes:
+    - 概念初步形成
+    - 叙事工程与认知工程交集的产物
+    - 从独立探索到融入认知工程框架
+  causals:
+  - condition: 叙事工程与认知工程开始产生交集但定位模糊
+    outcome: 需要明确叙事工程在认知工程框架中的定位——是独立领域还是认知工程的应用实例
+  - condition: 叙事工程被当作独立创作方法论而非认知工程的应用
+    outcome: 容易偏离认知工程的核心框架，导致概念体系扩散而非收敛
+  boundaries:
+  - 适用于叙事工程与认知工程的交叉领域，不适用于纯文学创作或艺术创作场景
+  - 假设认知工程为框架，叙事为其应用实例，不适用于无认知工程基础的场景
+  - 不涵盖传统的写作技巧或修辞学等纯创作方法论
+  properties:
+  - key: 定位
+    value: 叙事工程是意图工程在叙事场景的实例化
+  - key: 关系
+    value: 叙事工程是认知工程在创作领域的具体应用
+  - key: 成熟度
+    value: 从独立探索到融入认知工程框架的过渡阶段
+  dynamics:
+  - key: 整合演化
+    value: 从独立探索到融入认知工程框架
+  - key: 概念成熟度
+    value: 从模糊交集到明确定位的收敛
+  mappings:
+  - intent: 探索叙事工程在认知工程中的定位
+    motivation: 叙事工程与认知工程产生交集，需要明确其从属关系而非并行发展
+    action: 系统分析叙事工程与认知工程的概念交集，明确叙事工程作为意图工程在叙事场景的实例化定位
+    trigger: conditional
+    risk: medium
+  biases:
+  - id: 660e8400-e29b-41d4-a716-446655440016
+    belief: 认为叙事工程是完全独立的创作方法论，与认知工程只是偶然产生交集
+    fact: 叙事工程本质上是意图工程在叙事场景的实例化——它应当融入认知工程框架而非独立发展
+situations:
+- id: c3d4e5f6-a7b8-9012-cdef-123456789020
+  name: write
+  label: 叙事工程
+  content:
+    agenda: 找到真实而有效的对外表达方式，尝试视频、小说、新媒体等多种形式，形成不依赖于流量的真诚表达体系。
+    ecology: 视频录制尝试、写小说作为烦恼出口、小说被升华为默认整合入口、"非评判"作为创作理念关键词、表达形式从外部回归内在叙事。
+    frame: 将内容创作理解为从外部表达回归内在叙事的路径——小说既是情绪处理也是认知整合，非评判是创作理念转变的标志，表达方式直接影响获客能力。
+    dynamics: 从视频尝试到写小说作为烦恼出口，再到小说作为默认整合入口的确立，表达形式从外部回归内在。
+  relations:
+  - source: write
+    target: health
+    relation_type: support
+    confidence: medium
+    description: 叙事工程的小说创作作为情绪出口和认知整合入口，直接服务于身心健康的情绪调节机制，"小说作为默认整合入口"是压力释放的结构化通道
+intentions:
+- id: d3d0a62a-b533-46e9-8c86-7f11d7fd93b9
+  title: 探索与建立个人化的表达方式
+  description: 找到真实有效的对外表达方式，形成不依赖于流量的真诚表达体系
+  motivation: 写小说成为情绪出口并升华为认知整合入口
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: middle
+    label: 中层
+    description: 为顶层"有效对外表达"服务
+  priority:
+    name: low
+    label: 低
+    description: 全周持续但并非最高优先级
+  trigger:
+    name: conditional
+    label: 条件触发
+    description: 表达需求涌现时深入
+  risk:
+    name: low
+    label: 低
+    description: '"非评判"和"小说作为默认整合入口"已确立核心理念'
+thoughts:
+- 2026-05-11.md
+- 2026-05-12.md
+- 2026-05-13.md
+- 2026-05-14.md
+- 2026-05-15.md
+- 2026-05-16.md
+- 2026-05-17.md

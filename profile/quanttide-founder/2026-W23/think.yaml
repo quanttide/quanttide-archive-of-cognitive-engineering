@@ -1,0 +1,115 @@
+schemas:
+- usage: 适用于认知工程研究和工具设计时参考
+  entities:
+  - name: 人类意图
+    attributes:
+    - 驱动
+    - 反馈
+  - name: 辩论
+    attributes:
+    - 收敛
+    - 章程生成
+  causals:
+  - condition: 人类反馈打破AI局部最优
+    outcome: 辩论收敛
+  - condition: 辩论产出章程
+    outcome: 获得结构化知识
+  boundaries:
+  - 适用于人机协同
+  - 排除单机推理
+  - 需要以章程为辩论目标
+  properties:
+  - key: 收敛机制
+    value: 人类反馈打破局部最优
+  dynamics:
+  - key: 收敛速度
+    value: 随反馈质量提升
+  mappings:
+  - intent: 发现意图
+    action: 进行人机辩论
+  - intent: 生成章程
+    action: 将辩论产物结构化
+  biases:
+  - id: c8d9e0f1-a2b3-4567-9012-345678901234
+    belief: AI可自行收敛到最优
+    fact: 人类反馈是打破框架的关键
+situations:
+- id: d4e5f6a7-b8c9-0123-defa-234567890123
+  name: think
+  label: 认知工程
+  content:
+    agenda: 将意图工程确立为认知工程的核心方法论，以意图为基本单元驱动产品设计、架构设计等一切结构化生成过程。
+    ecology: 人机辩论模型暴露出 AI 自收敛不跳出框架的问题、可拓展监督模式（AI 监督 AI）被验证、章程生成成为辩论的自然产出、智谱意外验证"意图工程"概念。
+    frame: 将人机辩论理解为意图发现和收敛的具体手段——人类反馈是打破 AI 局部最优的关键，辩论的产物天然是章程类结构化知识，意图工程则是一切人类意图驱动生成过程的统一框架。
+    dynamics: 从人机辩论与反思模型的实验，到可拓展监督模式的确立，再到意图工程概念的发现与验证，是认知工程核心方法论从工具到理论的跃迁。
+  relations:
+  - source: think
+    target: write
+    relation_type: support
+    confidence: high
+    description: 意图工程作为认知工程核心方法论为叙事工程提供意图驱动的基本单元，人机辩论→章程生成的因果链直接支撑写作云从原型到框架的迭代
+  - source: think
+    target: product
+    relation_type: support
+    confidence: medium
+    description: 意图工程的统一框架为AI交互范式设计提供理论基础，人类反馈打破AI局部最优的认知机制解释了为何需要从阅读器视角而非编辑器视角重新设计交互
+  - source: think
+    target: innov
+    relation_type: conflict
+    confidence: medium
+    description: 认知工程的意图工程需要结构化收敛（辩论→章程），创新管理的POC范式强调快速试错和松散探索，思考意图的风险描述已明确指出"POC范式与结构化收敛存在张力"
+intentions:
+- id: 2ee4bf46-9b9c-4a34-979d-f88c84ebb714
+  title: 建立人机协同的反思与辩论模型
+  description: 通过 AI 自我辩论和人类反馈的交替收敛实现高质量反思
+  motivation: 发现 AI 自收敛会困在局部最优，人类反馈能跳出框架
+  agent:
+    name: founder_ai
+    label: 创始人+AI
+  level:
+    name: middle
+    label: 中层
+    description: 为顶层意图服务的阶段性目标
+  priority:
+    name: high
+    label: 高
+    description: 可拓展监督模式被验证有效，推动认知方法论落地
+  trigger:
+    name: persistent
+    label: 持续
+    description: 直到辩论模型可稳定产出章程
+  risk:
+    name: medium
+    label: 中
+    description: 人类介入的时机和频率仍需校准
+- id: a930f34f-e1b0-4da8-8d83-8451fcb8a472
+  title: 将意图工程作为认知工程的核心方法论
+  description: 以意图为基本单元驱动一切结构化生成过程
+  motivation: 智谱意外验证了"意图工程"概念，发现它恰好是自己一直在做的
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: top
+    label: 顶层
+    description: 为所有意图提供元框架和方向
+  priority:
+    name: high
+    label: 高
+    description: 整个实验的核心假设，辐射范围最广
+  trigger:
+    name: persistent
+    label: 持续
+    description: 直到意图工程成为默认方法论
+  risk:
+    name: high
+    label: 高
+    description: 核心假设尚未被大规模验证，POC范式与结构化收敛存在张力
+thoughts:
+- 2026-06-01.md
+- 2026-06-02.md
+- 2026-06-03.md
+- 2026-06-04.md
+- 2026-06-05.md
+- 2026-06-06.md
+- 2026-06-07.md

@@ -1,0 +1,99 @@
+schemas:
+- usage: 当在高强度认知探索工作中需要维持心理可持续性时使用
+  entities:
+  - name: 心理健康
+    attributes:
+    - 高压探索的伴生问题
+    - 既不能忽视也不能过度关注
+    - 需在探索节奏中自然调节
+  - name: 工作节奏
+    attributes:
+    - 早睡早起
+    - 整合带来的清晰感
+    - 压力累积与释放的循环
+  - name: 压力
+    attributes:
+    - 探索中不可避免
+    - 累积影响判断质量
+    - 需主动觉察与调节
+  causals:
+  - condition: 高压探索中压力持续累积未被觉察
+    outcome: 压力降低判断质量，最终导致倦怠
+  - condition: 建立早睡早起的规律工作节奏
+    outcome: 通过整合产生清晰感，自然释放压力
+  boundaries:
+  - 适用于高压认知探索场景，不适用于创伤或临床心理问题
+  - 假设个人有基本的自我觉察能力，不替代专业心理咨询
+  - 不涵盖药物或医学层面的心理干预
+  properties:
+  - key: 调节模式
+    value: 在探索节奏中自然调节，非刻意干预
+  - key: 触发机制
+    value: 压力累积 → 觉察 → 主动调节
+  - key: 核心原则
+    value: 既不能忽视也不能过度关注
+  dynamics:
+  - key: 调节循环
+    value: 从觉察压力到主动调节的循环
+  - key: 压力变化
+    value: 累积 → 觉察 → 释放 → 恢复
+  mappings:
+  - intent: 调节工作节奏维护心理可持续
+    action: 建立规律作息，在探索节奏中自然调节压力，从觉察到主动调节形成闭环
+  biases:
+  - id: 660e8400-e29b-41d4-a716-446655440004
+    belief: 认为高压探索中应全力冲刺，心理调节会拖慢进度
+    fact: 忽视心理调节反而降低长期产出效率——可持续的节奏比短期冲刺产出更高
+situations:
+- id: c9d0e1f2-a3b4-5678-cdef-789012345619
+  name: health
+  label: 身心健康
+  content:
+    agenda: 在高强度创业探索中维持心理健康，通过觉察压力信号、释放情绪压力、保持记录习惯来建立可持续的抗压节奏。
+    ecology: 压力积累到爆发释放再到恢复平静的完整情绪周期、压力身体反应被细致觉察（呼吸、颈椎、胸闷、眼疼）、写作记录作为 AI 理解自我的钥匙、Token
+      费用作为新的焦虑源。
+    frame: 将心理调节理解为"阻碍变养料"的元能力——觉察压力本身就是应对策略，把随手写下的心情当作 AI 理解自己的钥匙，心态在越来越真实中变好。
+    dynamics: 从理论性应对到压力累积，再到爆发释放和身体觉察，最终恢复平静呈现完整情绪周期。
+  relations:
+  - source: health
+    target: think
+    relation_type: support
+    confidence: high
+    description: 健康作为底层意图保障认知能力可持续，压力觉察→释放→恢复的完整情绪周期为"涌现"和"更快出来反复改"的高强度认知探索提供生理和心理基础
+  - source: health
+    target: business
+    relation_type: support
+    confidence: medium
+    description: 健康为从焦虑驱动到战略驱动的商业模式转型提供心理空间，Token费用作为新压力源的应对直接支撑大单战略所需的长期定力
+intentions:
+- id: 8047160e-26ef-4ed9-97f7-1fab69301e95
+  title: 在高压探索中维护心理可持续性
+  description: 通过觉察压力信号、释放情绪、保持记录来维持心理健康，建立可持续的抗压节奏
+  motivation: 高强度创业中压力身体反应（呼吸、颈椎、胸闷、眼疼）被细致觉察
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: bottom
+    label: 底层
+    description: 为所有其他意图提供运作前提的基础条件
+  priority:
+    name: high
+    label: 高
+    description: 覆盖全周，是其他意图能否持续运作的前提
+  trigger:
+    name: persistent
+    label: 持续
+    description: 压力觉察→释放→恢复的周期在全周循环
+  risk:
+    name: medium
+    label: 中
+    description: 高压探索与心理可持续存在内在矛盾，Token费用作为新压力源加剧冲突
+thoughts:
+- 2026-05-04.md
+- 2026-05-05.md
+- 2026-05-06.md
+- 2026-05-07.md
+- 2026-05-08.md
+- 2026-05-09.md
+- 2026-05-10.md

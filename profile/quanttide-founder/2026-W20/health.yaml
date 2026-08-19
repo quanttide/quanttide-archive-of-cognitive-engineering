@@ -1,0 +1,104 @@
+schemas:
+- usage: 当在高强度认知探索中需要管理心理资源、防止倦怠、维持长期产出时使用
+  entities:
+  - name: 心理可持续
+    attributes:
+    - 可持续探索的前提条件
+    - 不是独立问题
+    - 所有认知活动的基础设施
+    - 长时间高强度探索后的疲劳积累需要主动管理
+  - name: 工作节奏管理
+    attributes:
+    - 早睡早起的规律作息
+    - 整合带来的清晰感作为主要对冲手段
+    - 从被动应对疲劳到主动设计恢复节点
+    - 无意义感开始浮现是预警信号
+  - name: 疲劳与恢复
+    attributes:
+    - 长时间高强度探索后必然积累
+    - 累积影响判断质量
+    - 整合清晰感是自然释放机制
+    - 需要主动设计而非被动等待恢复
+  causals:
+  - condition: 长时间高强度探索后疲劳持续累积未被觉察
+    outcome: 无意义感开始浮现，判断质量下降，最终可能导致认知倦怠
+  - condition: 建立规律工作节奏并主动设计恢复节点
+    outcome: 通过整合产生清晰感，自然对冲疲劳累积，维持可持续产出
+  boundaries:
+  - 适用于高压认知探索场景的心理调节，不适用于临床心理疾病或创伤干预
+  - 假设个人具备基本的自我觉察能力，不替代专业心理咨询
+  - 核心是调节工作节奏而非管理情绪——从行为入手自然带动心理状态
+  properties:
+  - key: 定位
+    value: 心理健康是认知活动的基础设施，而非独立问题
+  - key: 调节策略
+    value: 从被动应对疲劳到主动设计恢复节点
+  - key: 预警信号
+    value: 无意义感浮现——提示需要调整节奏而非放弃探索
+  dynamics:
+  - key: 调节演化
+    value: 从被动应对疲劳到主动设计恢复节点
+  - key: 压力周期
+    value: 疲劳积累 → 觉察信号 → 主动恢复 → 整合清晰 → 恢复产出
+  mappings:
+  - intent: 建立可持续工作节奏
+    motivation: 疲劳累积开始影响判断质量，无意义感浮现需要主动应对
+    action: 建立规律作息，主动设计恢复节点，利用整合清晰感对冲疲劳，将心理调节融入工作节奏而非独立管理
+    trigger: persistent
+    risk: medium
+  biases:
+  - id: 660e8400-e29b-41d4-a716-446655440013
+    belief: 认为高压探索中应全力冲刺，停下来休息会拖慢进度、降低产出
+    fact: 忽视心理调节反而降低长期产出效率——主动恢复节点能维持可持续的高质量产出
+situations:
+- id: c9d0e1f2-a3b4-5678-cdef-789012345620
+  name: health
+  label: 身心健康
+  content:
+    agenda: 在高强度高复杂度的创始人工作中维持身心健康而不崩溃，建立可持续的工作节奏和情绪调节机制。
+    ecology: 身体疲惫达到峰值（浑身酸疼、精力耗尽）、情感隔离作为应对策略、"不敢说困难"在现实与创作中的同构被发现、不安焦点从疲惫转向信息丢失。
+    frame: 将身心管理理解为所有其他意图的基础条件——"不敢说困难"的觉察是被动承受向主动觉察的转折，信息丢失的焦虑是疲惫感被建设性焦虑替代的标志。
+    dynamics: 从身体疲惫累积到情感隔离应对，再到不敢说困难的认知突破，最后不安转向信息丢失表明焦虑从消耗走向建设。
+  relations:
+  - source: health
+    target: agent
+    relation_type: support
+    confidence: high
+    description: 健康作为底层意图维持高强度认知工作所需的精力，为System One/Two双引擎架构的持续迭代提供身心前提，身体疲惫峰值直接制约AI协作范式设计质量
+  - source: health
+    target: business
+    relation_type: support
+    confidence: high
+    description: 健康为营收压力和团队流动下的管理风格转型提供心理韧性，"不敢说困难"的认知突破是管理风格从柔软转向"六亲不认"的前提
+intentions:
+- id: ab0708cf-ee43-4863-847a-0c5fa48cf36d
+  title: 管理认知负荷与维持可持续节奏
+  description: 在高强度高复杂度的创始人工作中建立可持续的工作节奏和情绪调节机制
+  motivation: 身体疲惫达到峰值，发现"不敢说困难"在现实与创作中的同构
+  agent:
+    name: founder
+    label: 创始人
+  level:
+    name: bottom
+    label: 底层
+    description: 为所有其他意图提供运作前提
+  priority:
+    name: high
+    label: 高
+    description: 贯穿全周，影响所有其他意图的执行质量
+  trigger:
+    name: persistent
+    label: 持续
+    description: 作为所有其他意图的基础保障
+  risk:
+    name: medium
+    label: 中
+    description: 情感隔离作为应对策略与团队协作需求之间存在张力
+thoughts:
+- 2026-05-11.md
+- 2026-05-12.md
+- 2026-05-13.md
+- 2026-05-14.md
+- 2026-05-15.md
+- 2026-05-16.md
+- 2026-05-17.md
